@@ -2,7 +2,7 @@
 
 > Nuxt &amp; Vue based new portfolio website 🚀
 
-## Build Setup
+## Build Setup Search Results ⚙️
 
 ```bash
 # install dependencies
@@ -17,6 +17,10 @@ $ npm run start
 
 # generate static project
 $ npm run generate
+
+# lint and lint fix
+$ npm run lint
+$ npm run lintfix
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
