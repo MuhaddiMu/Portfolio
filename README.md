@@ -2,7 +2,7 @@
 
 <i><p align="center">Nuxt & Vue based new portfolio website 🚀</p></i>
 
-## Build Setup Search Results ⚙️
+## Build Setup ⚙️
 
 ```bash
 # install dependencies
