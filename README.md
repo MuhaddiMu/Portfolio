@@ -1,6 +1,6 @@
 <a href="https://muhaddis.info"><p align="center"><img width="100px" src="https://raw.githubusercontent.com/MuhaddiMu/Portfolio/master/static/Logo.png"></p></a>
 
-<i align="center">Nuxt & Vue based new portfolio website 🚀</i>
+<i><p align="center">Nuxt & Vue based new portfolio website 🚀</p></i>
 
 ## Build Setup Search Results ⚙️
 
