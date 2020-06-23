@@ -21,8 +21,9 @@
     }
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "@nuxtjs/pwa": "^3.0.0-0"
+    "@nuxtjs/pwa": "^3.0.0-0",
+    "nuxt": "^2.13.0",
+    "vue-typer": "^1.2.0"
   },
   "devDependencies": {
     "@nuxtjs/color-mode": "^1.0.0",

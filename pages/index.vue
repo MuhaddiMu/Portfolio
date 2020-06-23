@@ -1,5 +1,5 @@
 <template>
-  <div data-rsssl="1" class="home blog">
+  <div class="home blog">
     <!--// BEGIN #control //-->
     <header id="control">
       <div id="side">
@@ -10,8 +10,17 @@
               ><img src="@/assets/images/logo.png" alt="Muhaddis"
             /></a>
           </h1>
-
-          <h4 class="sub">Cyber Security Researcher</h4>
+          <h4 class="sub">
+            <vue-typer
+              :repeat="Infinity"
+              :text="['Security Researcher', 'Web Developer']"
+              erase-style="backspace"
+              :erase-delay="50"
+              :pre-type-delay="1000"
+              :type-delay="100"
+              caret-animation="expand"
+            ></vue-typer>
+          </h4>
         </div>
         <!-- END #logo -->
 
@@ -110,8 +119,6 @@
             </div>
           </div>
         </div>
-
-        <!-- END #profile (panel 1) -->
 
         <!-- BEGIN #skills (panel 2) -->
 
@@ -2372,6 +2379,4 @@ div.in > ol {
     width: 100%;
   }
 }
-
-/*=== Custom CSS ===*/
 </style>

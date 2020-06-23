@@ -55,3 +55,7 @@ h6,
 a {
   color: var(--color-primary)
 }
+
+.vue-typer .custom.char.typed {
+  color: #fff;
+}
