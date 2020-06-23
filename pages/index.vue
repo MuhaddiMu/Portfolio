@@ -1,124 +1,11 @@
 <template>
   <div class="home blog">
-    <!--// BEGIN #control //-->
-    <header id="control">
-      <div id="side">
-        <!-- BEGIN #logo-->
-        <div id="logo">
-          <h1>
-            <a href="https://www.muhaddis.info/"
-              ><img src="@/assets/images/logo.png" alt="Muhaddis"
-            /></a>
-          </h1>
-          <h4 class="sub">
-            <vue-typer
-              :repeat="Infinity"
-              :text="['Security Researcher', 'Web Developer']"
-              erase-style="backspace"
-              :erase-delay="50"
-              :pre-type-delay="500"
-              :type-delay="100"
-              caret-animation="expand"
-            ></vue-typer>
-          </h4>
-        </div>
-        <!-- END #logo -->
-
-        <!-- BEGIN #nav -->
-        <nav id="nav">
-          <!-- Screen Size > 880px -->
-          <ul class="regular">
-            <li class="nav_1">
-              <a v-smooth-scroll href="#profile">Profile<span></span></a>
-            </li>
-            <li class="nav_2">
-              <a v-smooth-scroll href="#skills">Skills<span></span></a>
-            </li>
-            <li class="nav_3">
-              <a v-smooth-scroll href="#works">Works<span></span></a>
-            </li>
-            <li class="nav_5">
-              <a v-smooth-scroll href="#blog">Blog<span></span></a>
-            </li>
-            <li class="nav_6">
-              <a v-smooth-scroll href="#contact">Contact<span></span></a>
-            </li>
-          </ul>
-
-          <!-- Screen Size < 880px -->
-          <ul class="mobile">
-            <li class="nav_1">
-              <a v-smooth-scroll href="#profile"><span></span></a>
-            </li>
-            <li class="nav_2">
-              <a v-smooth-scroll href="#skills"><span></span></a>
-            </li>
-            <li class="nav_3">
-              <a v-smooth-scroll href="#works"><span></span></a>
-            </li>
-            <li class="nav_5">
-              <a v-smooth-scroll href="#blog"><span></span></a>
-            </li>
-            <li class="nav_6">
-              <a v-smooth-scroll href="#contact"><span></span></a>
-            </li>
-          </ul>
-        </nav>
-        <!-- END #nav -->
-      </div>
-    </header>
-    <!--// END #control //-->
-
-    <!--// BEGIN #main //-->
+    <TheHeader />
     <section id="main">
       <div id="content">
         <!-- BEGIN #profile (panel 1) -->
 
-        <div id="profile" class="panel">
-          <img
-            id="photo"
-            src="https://muhaddis.info/wp-content/uploads/2016/06/Muhaddis-700x1050.jpg"
-            alt="Muhaddis"
-          />
-
-          <div class="box">
-            <div class="in">
-              <div class="one-half no-margin">
-                <h5>Who Am I?</h5>
-
-                I make it my goal to look not only to my own interests, but also
-                to the interests of others. Browse my
-                <a href="#works">Portoflio</a> and discover the creative side of
-                my being. Enough said for now, start scrolling.
-              </div>
-
-              <div class="one-half no-margin column-last">
-                <h5>Roaming Outside the Box</h5>
-
-                I'm never satisfied with the current trends and fads flying
-                around the web. Creativity, I believe will never progress unless
-                we climb outside the confining box of simplemindedness.
-              </div>
-            </div>
-          </div>
-
-          <div id="vcard" class="box">
-            <div class="in">
-              <div class="three-fourths">
-                <h4>Grab a Quick Copy of my vCard</h4>
-              </div>
-
-              <div class="one-fourth column-last">
-                <a
-                  href="https://docs.google.com/uc?authuser=0&id=0B-KqdveSClD-T1BTMUNCdVdKYmM&export=download"
-                  class="btn"
-                >
-                  Download
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
+        <TheProfile />
 
         <!-- BEGIN #skills (panel 2) -->
 
@@ -920,8 +807,8 @@
             <h2>No more, where are you going?</h2>
 
             <h5>
-              <a href="#profile">Go back to top</a> or use the menu to your left
-              to navigate.
+              <a v-smooth-scroll href="#profile">Go back to top</a> or use the
+              menu to your left to navigate.
             </h5>
           </div>
         </div>
@@ -939,10 +826,6 @@
     </footer>
     <!--// END #footer //-->
 
-    <!--// BEGIN .vcard_success //-->
-    <div class="vcard_success"><h4>Thanks for downloading!</h4></div>
-    <!--// END vcard_success //-->
-
     <!--// BEGIN .jump //-->
     <a href="#main" class="jump">Top</a>
     <!--// END .jump //-->
@@ -950,7 +833,14 @@
 </template>
 
 <script>
-export default {}
+import TheHeader from '@/components/TheHeader'
+import TheProfile from '@/components/TheProfile'
+export default {
+  components: {
+    TheHeader,
+    TheProfile
+  }
+}
 </script>
 
 <style scoped>
@@ -968,83 +858,6 @@ export default {}
   height: 1%;
 }
 
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-font,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
-  background: transparent;
-}
-
-body {
-  line-height: 1;
-}
-#side li,
-#social li {
-  list-style: none;
-}
 blockquote,
 q {
   quotes: none;
@@ -1104,11 +917,6 @@ address {
 p {
   margin-bottom: 20px;
 }
-a {
-  color: #fff;
-  font-style: italic;
-  text-decoration: none;
-}
 
 input,
 textarea,
@@ -1124,65 +932,6 @@ button {
   padding: 0;
   border: none;
   background: none;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: #fff;
-  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  margin-bottom: 25px;
-  line-height: 1em;
-  letter-spacing: 2px;
-}
-
-h1 {
-  font-size: 36px;
-  text-transform: uppercase;
-  letter-spacing: 7px;
-  line-height: 1.2em;
-}
-
-h1 span {
-  font-weight: 300;
-}
-
-h2 {
-  font-size: 24px;
-  line-height: 1.6em;
-  text-transform: uppercase;
-}
-
-h3 {
-  font-size: 20px;
-  line-height: 1.6em;
-  letter-spacing: 0;
-}
-
-h4 {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 28px;
-  text-transform: uppercase;
-}
-
-h5 {
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 1.7em;
-  text-transform: uppercase;
-}
-
-h6 {
-  font-size: 10px;
-}
-
-hr {
-  border: 1px solid #fff;
 }
 
 iframe,
@@ -1246,25 +995,6 @@ img {
 
 ========================================================*/
 
-#control {
-  width: 34%;
-  min-width: 300px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  overflow: auto;
-  -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-  box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-#control #side {
-  width: 240px;
-  padding: 78px 30px 0 30px;
-  float: right;
-}
-
 #main {
   width: 63%;
   float: right;
@@ -1284,214 +1014,13 @@ img {
   position: relative;
 }
 
-.box {
-  color: #cacdce;
-}
-
-.box .in {
-  padding: 30px;
-  margin-bottom: 20px;
-  overflow: hidden;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-#main img,
-.box .in {
-  max-width: 100%;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-  box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-}
-
 /* Columns */
-
-.full {
-  width: 100%;
-  clear: both;
-  margin-bottom: 25px;
-  overflow: hidden;
-}
-.one-half,
-.one-third,
-.two-thirds,
-.one-fourth,
-.three-fourths,
-.one-fifth,
-.two-fifths,
-.three-fifths,
-.four-fifths,
-.one-sixth {
-  float: left;
-  position: relative;
-  margin-right: 4%;
-  margin-bottom: 25px;
-  overflow: hidden;
-}
-.no-margin {
-  margin-bottom: 0;
-}
-.one-half {
-  width: 48%;
-}
-.one-third {
-  width: 30.66%;
-}
-.two-thirds {
-  width: 65.1%;
-}
-.one-fourth {
-  width: 22%;
-}
-.three-fourths {
-  width: 74%;
-}
-.one-fifth {
-  width: 16.8%;
-}
-.two-fifths {
-  width: 37.2%;
-}
-.three-fifths {
-  width: 54.8%;
-}
-.four-fifths {
-  width: 78.8%;
-}
-.column-last {
-  margin-right: 0 !important;
-  clear: right;
-}
-
-/* Buttons */
-
-.btn {
-  height: 30px;
-  line-height: 30px;
-  font-size: 12px;
-  font-weight: 700;
-  font-style: normal;
-  color: #fff !important;
-  text-transform: uppercase;
-  padding: 4px 15px;
-  margin: 0 10px 10px 0;
-  display: inline-block;
-  border: none;
-  background: #323439;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-.large {
-  height: 40px;
-  line-height: 40px;
-  font-size: 16px;
-  padding: 4px 20px;
-}
-
-.regular {
-  font-size: 12px;
-}
-
-.small {
-  height: 16px;
-  line-height: 16px;
-  padding: 4px 10px;
-}
 
 /*========================================================
 
 	BEGIN Side
 
 ========================================================*/
-
-#side #logo {
-  text-align: right;
-}
-
-#side #logo h1 {
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-#side #logo a {
-  font-style: normal;
-  text-decoration: none;
-  display: block;
-  float: right;
-}
-
-#side #logo .plain_text {
-  margin: -6px -7px 10px 0;
-}
-
-#side #nav {
-  width: 100%;
-  margin-top: 60px;
-  overflow: hidden;
-}
-
-#side #nav .mobile {
-  display: none;
-}
-
-#side #nav ul li {
-  margin-bottom: 30px;
-  float: right;
-  clear: both;
-}
-
-#side #nav ul li a,
-#side #nav ul li span {
-  display: block;
-  float: right;
-}
-
-#side #nav ul li a {
-  font-size: 12px;
-  font-style: normal;
-  text-align: right;
-  line-height: 17px;
-}
-
-#side #nav ul li span {
-  width: 26px;
-  height: 18px;
-  margin-left: 10px;
-  display: block;
-}
-
-#side #nav ul .nav_1 span {
-  height: 17px;
-  background: url('~assets/images/nav.png') top right no-repeat;
-}
-
-#side #nav ul .nav_2 span {
-  height: 16px;
-  background: url('~assets/images/nav.png') right -47px no-repeat;
-}
-
-#side #nav ul .nav_3 span {
-  height: 21px;
-  background: url('~assets/images/nav.png') right -93px no-repeat;
-}
-
-#side #nav ul .nav_4 span {
-  height: 22px;
-  background: url('~assets/images/nav.png') right -141px no-repeat;
-}
-
-#side #nav ul .nav_5 span {
-  height: 23px;
-  background: url('~assets/images/nav.png') right -193px no-repeat;
-}
-
-#side #nav ul .nav_6 span {
-  height: 16px;
-  background: url('~assets/images/nav.png') bottom right no-repeat;
-}
 
 /* Secondary Nav */
 
@@ -1581,62 +1110,11 @@ img {
 
 ========================================================*/
 
-#content {
-}
-
 /*=============================
 	
 		BEGIN Profile
 	
 	=============================*/
-
-#profile #photo {
-  margin-bottom: 20px;
-}
-
-#profile p {
-  margin-bottom: 0;
-}
-
-/* vCard */
-
-#vcard .in {
-  padding-bottom: 0;
-}
-
-#vcard .in > div {
-  margin-bottom: 0;
-}
-
-#vcard .btn {
-  width: 72%;
-  text-align: center;
-  padding-left: 14%;
-  padding-right: 14%;
-}
-
-#vcard h4 {
-  line-height: 36px;
-  margin-bottom: 30px;
-}
-
-.vcard_success {
-  width: 200px;
-  height: 70px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  padding: 30px;
-  margin: -65px 0 0 -130px;
-  text-align: center;
-  display: none;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-  box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-  background-color: rgba(0, 0, 0, 0.8);
-}
 
 /*=============================
 	
@@ -2042,10 +1520,6 @@ img {
 	
 	=============================*/
 
-h5 {
-  margin-bottom: 10px;
-}
-
 /*========================================================
 
 	BEGIN Widgets - If Widgets are turned on
@@ -2184,199 +1658,5 @@ div.in > ol {
   list-style-type: decimal;
   margin-bottom: 20px;
   padding-left: 40px;
-}
-
-/*========================================================
-
-	BEGIN Unused WP Styls
-
-========================================================*/
-
-/*================================================================================================================
-
-	RESPONSIVE
-
-================================================================================================================*/
-
-@media only screen and (max-width: 880px) {
-  #control {
-    width: 100%;
-    height: 150px;
-    top: 0;
-    right: 0;
-    bottom: auto;
-    z-index: 10001;
-  }
-
-  #control #side {
-    width: 88%;
-    padding: 20px 6% 0 6%;
-    float: none;
-    overflow: hidden;
-  }
-
-  #control #side #logo {
-    width: 100%;
-    float: left;
-    text-align: center;
-  }
-
-  #control #side #logo h1 {
-    font-size: 24px;
-    margin: 0 -5px 8px 0;
-    text-align: center;
-  }
-
-  #control #side #logo .sub {
-    font-size: 12px;
-    margin-bottom: 15px;
-  }
-
-  #control #side #logo a {
-    width: 214px;
-    margin: 0 auto;
-    float: none;
-  }
-
-  #control #side #nav {
-    float: left;
-    position: relative;
-    margin: 0;
-  }
-
-  #control #side #nav .mobile {
-    clear: left;
-    float: left;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 50%;
-    text-align: center;
-    display: block;
-  }
-  #control #side #nav .regular {
-    display: none;
-  }
-
-  #control #side #nav ul li {
-    width: auto;
-    display: block;
-    clear: none;
-    float: left;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    right: 50%;
-    height: 26px;
-    margin: 0 10px;
-  }
-
-  #control #side #nav ul li span {
-    margin: 0;
-  }
-
-  #secondary_nav {
-    width: 100%;
-    height: 12px;
-    padding-top: 16px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: url('~assets/images/trans.png') repeat;
-  }
-
-  #secondary_nav > ul {
-    clear: left;
-    float: left;
-    margin: 0;
-    padding: 0;
-    position: relative;
-    left: 50%;
-    text-align: center;
-    display: block;
-  }
-
-  #secondary_nav > ul > li {
-    width: auto;
-    display: block;
-    clear: none;
-    float: left;
-    list-style: none;
-    position: relative;
-    right: 50%;
-  }
-
-  #secondary_nav ul li ul {
-    left: 0;
-    margin-right: 0;
-  }
-
-  #secondary_nav ul li ul li a {
-    text-align: left;
-  }
-
-  #main {
-    width: 100%;
-    opacity: 1 !important;
-  }
-
-  #main #content {
-    max-width: none;
-    padding: 0 20px;
-  }
-
-  .panel {
-    padding-top: 180px;
-  }
-
-  .skill .bar {
-    height: 32px;
-    line-height: 32px;
-  }
-
-  .skill .bar div {
-    height: 32px;
-  }
-
-  #widgets {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 540px) {
-  .one-half,
-  .one-third,
-  .two-thirds,
-  .one-fourth,
-  .three-fourths,
-  .one-fifth,
-  .two-fifths,
-  .three-fifths,
-  .four-fifths,
-  .one-sixth {
-    width: 96%;
-  }
-
-  .skill .bar {
-    height: 24px;
-    line-height: 24px;
-  }
-
-  .skill .bar div {
-    height: 24px;
-  }
-
-  .post_left,
-  .post_right {
-    width: 100% !important;
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  #works ul li {
-    width: 100%;
-  }
 }
 </style>

@@ -42,7 +42,7 @@ export default {
    */
   plugins: [
     { src: '~/plugins/vue-typer', ssr: false },
-    { src: '~/plugins/smooth-scroll', mode: 'client' }
+    { src: '~/plugins/smooth-scroll', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
