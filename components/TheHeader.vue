@@ -176,8 +176,4 @@
   height: 16px;
   background: url('~assets/images/nav.png') bottom right no-repeat;
 }
-
-.regular {
-  font-size: 12px;
-}
 </style>

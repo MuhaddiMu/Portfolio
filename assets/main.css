@@ -165,7 +165,24 @@ h1, h2, h3, h4, h5, h6 {
 	
 	hr {
 		border: 1px solid #fff;
-	}
+  }
+  
+body,
+h1 span,
+h5,
+.post .post_date h5,	
+#contact_form label,
+.widget_calendar #wp-calendar a {
+      font: 12px/22px "Open Sans", Helvetica, sans-serif;
+    }
+
+h1, h2, h3, h4, h5, h6,
+.post .post_bottom .cats ul li a, 
+.format-link a,
+.widget ul li a,
+.btn, .tagcloud a, .widget_categories ul li a, .cats ul li a {
+      font-family: "Montserrat", sans-serif;
+  }
 
 #side li,
 #social li {
@@ -217,14 +234,6 @@ body {
 	opacity: 1 !important;
 }
 
-body,
-h1 span,
-h5,
-.post .post_date h5,
-#contact_form label {
-	font: 12px/22px 'Open Sans', Helvetica, sans-serif;
-}
-
 a {
 	color: #fff;
 	font-style: italic;
@@ -235,6 +244,7 @@ a {
 	color: #fff;
 }
 
+/* Columns */
 
 .full {
 	width: 100%;
@@ -305,46 +315,70 @@ a {
 	clear: right;
 }
 
+/* Buttons */
+	
 .btn {
-	height: 30px;
-	line-height: 30px;
-	font-size: 12px;
-	font-weight: 700;
-	font-style: normal;
-	color: #fff !important;
-	text-transform: uppercase;
-	padding: 4px 15px;
-	margin: 0 10px 10px 0;
-	display: inline-block;
-	border: none;
-	background: #323439;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  font-weight: 700;
+  font-style: normal;
+  color: #fff !important;
+  text-transform: uppercase;
+  padding: 4px 15px;
+  margin: 0 10px 10px 0;
+  display: inline-block;
+  border: none;
+  background: #323439;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
 }
 
 .large {
-	height: 40px;
-	line-height: 40px;
-	font-size: 16px;
-	padding: 4px 20px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  padding: 4px 20px;
+}
+
+.regular {
+  font-size: 12px;
 }
 
 .small {
-	height: 16px;
-	line-height: 16px;
-	padding: 4px 10px;
+  height: 16px;
+  line-height: 16px;
+  padding: 4px 10px;
+}
+
+/* Box */
+	
+.panel {
+  padding-top: 78px;
+  margin-bottom: 350px;
+  position: relative;
 }
 
 .box {
-	color: #cacdce;
+  color: #cacdce;
 }
 
 .box .in {
-	padding: 30px;
-	margin-bottom: 20px;
-	overflow: hidden;
-	background-color: rgba(0, 0, 0, 0.8);
+  padding: 30px;
+  margin-bottom: 20px;
+  overflow: hidden;
+  background-color: rgba(0,0,0, 0.8)
+}
+
+#main img,
+.box .in {
+  max-width: 100%;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow:  0px 1px 7px 0px rgba(00, 00, 00, .7);
+        box-shadow:  0px 1px 7px 0px rgba(00, 00, 00, .7);
 }
 
 #main img,
@@ -389,181 +423,4 @@ a {
 
 h5 {
   margin-bottom: 10px;
-}
-
-/* Responsiveness */
-
-@media only screen and (max-width : 880px) {
-	
-	#control {
-		width: 100%;
-		height: 150px;
-		top: 0;
-		right: 0;
-		bottom: auto;
-		z-index: 10001;
-	}
-	
-	#control #side {
-		width: 88%;
-		padding: 20px 6% 0 6%;
-		float: none;
-		overflow: hidden;
-	}
-	
-	#control #side #logo {
-		width: 100%;
-		float: left;
-		text-align: center;
-	}
-	
-	#control #side #logo h1 {
-		font-size: 24px;
-		margin: 0 -5px 8px 0;
-		text-align: center;
-	}
-	
-	#control #side #logo .sub {
-		font-size: 12px;
-		margin-bottom: 15px;
-	}
-	
-	#control #side #logo a {
-		width: 214px;
-		margin: 0 auto;
-		float: none;
-	}
-	
-	#control #side #nav {
-		float: left;
-		position: relative;
-		margin: 0;
-	}
-	
-	#control #side #nav .mobile {
-		clear: left;
-		float: left;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		left: 50%;
-		text-align: center;
-		display: block;
-	}
-	#control #side #nav .regular { display: none; }
-	
-	#control #side #nav ul li {
-		width: auto;
-		display: block;
-		clear: none;
-		float: left;
-		list-style: none;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		right: 50%;
-		height: 26px;
-		margin: 0 10px;
-	}
-	
-	#control #side #nav ul li span {
-		margin: 0;
-	}
-	
-	#secondary_nav {
-		width: 100%;
-		height: 12px;
-		padding-top: 16px;
-		position: fixed;
-		bottom: 0;
-		left: 0;
-		right: 0;
-		background: url('~assets/images/trans.png') repeat;
-	}
-	
-	#secondary_nav > ul {
-		clear: left;
-		float: left;
-		margin: 0;
-		padding: 0;
-		position: relative;
-		left: 50%;
-		text-align: center;
-		display: block;
-	}
-	
-	#secondary_nav > ul > li {
-		width: auto;
-		display: block;
-		clear: none;
-		float: left;
-		list-style: none;
-		position: relative;
-		right: 50%;
-	}
-	
-	#secondary_nav ul li ul {
-		left: 0;
-		margin-right: 0;
-	}
-	
-	#secondary_nav ul li ul li a {
-		text-align: left; 
-	}
-	
-	#main {
-		width: 100%;
-		opacity: 1 !important;
-	}
-	
-	#main #content {
-		max-width: none;
-		padding: 0 20px;
-	}
-	
-	.panel {
-		padding-top: 180px;
-	}
-	
-	.skill .bar {
-		height: 32px;
-		line-height: 32px;
-	}
-	
-	.skill .bar div {
-		height: 32px;
-	}
-	
-	#widgets {
-		display: none;
-	}
-	
-}
-
-@media only screen and (max-width : 540px) {
-
-	.one-half, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-fifth, .two-fifths, .three-fifths, .four-fifths, .one-sixth { width: 96%; }
-	
-	.skill .bar {
-		height: 24px;
-		line-height: 24px;
-	}
-	
-	.skill .bar div {
-		height: 24px;
-	}
-	
-	.post_left,
-	.post_right {
-		width: 100% !important;
-	}
-	
-}
-
-@media only screen and (max-width : 320px) {
-
-	#works ul li {
-		width: 100%;
-	}
-
 }

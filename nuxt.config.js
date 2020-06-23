@@ -36,7 +36,7 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['@/assets/main.css'],
+  css: ['@/assets/main.css', '@/assets/responsiveness.css'],
   /*
    ** Plugins to load before mounting the App
    */
