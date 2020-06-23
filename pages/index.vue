@@ -7,9 +7,7 @@
         <div id="logo">
           <h1>
             <a href="https://www.muhaddis.info/"
-              ><img
-                src="https://muhaddis.info/wp-content/uploads/2016/06/logo.png"
-                alt="Muhaddis"
+              ><img src="@/assets/images/logo.png" alt="Muhaddis"
             /></a>
           </h1>
 
