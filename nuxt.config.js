@@ -40,7 +40,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~/plugins/vue-typer', ssr: false }],
+  plugins: [
+    { src: '~/plugins/vue-typer', ssr: false },
+    { src: '~/plugins/smooth-scroll', mode: 'client' }
+  ],
   /*
    ** Nuxt.js dev-modules
    */

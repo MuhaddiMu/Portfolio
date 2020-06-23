@@ -23,6 +23,7 @@
   "dependencies": {
     "@nuxtjs/pwa": "^3.0.0-0",
     "nuxt": "^2.13.0",
+    "vue-smooth-scroll": "^1.0.13",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
