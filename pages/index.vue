@@ -3,77 +3,8 @@
     <TheHeader />
     <section id="main">
       <div id="content">
-        <!-- BEGIN #profile (panel 1) -->
-
         <TheProfile />
-
-        <!-- BEGIN #skills (panel 2) -->
-
-        <div id="skills" class="panel box">
-          <div class="in">
-            <h2>Skills</h2>
-
-            <p>Here below some of my Interests and Skills are listed below.</p>
-
-            <div class="clearfix"></div>
-
-            <div class="skill-set expertism">
-              <h3 class="line">Expertism</h3>
-              <div class="skill level_9-5">
-                <h5>
-                  Cyber Security / Security Engineering / Penetration Testing /
-                  Application Security
-                </h5>
-                <div class="bar">
-                  <div><span>95%</span></div>
-                </div>
-              </div>
-
-              <div class="skill level_8">
-                <h5>
-                  Backend Web Development / PHP / Node.js / Express / Laravel /
-                  Django
-                </h5>
-                <div class="bar">
-                  <div><span>80%</span></div>
-                </div>
-              </div>
-
-              <div class="skill level_8-5">
-                <h5>
-                  Frontend Web Development / JavaScript / jQuery / Vue.js /
-                  React.js
-                </h5>
-                <div class="bar">
-                  <div><span>85%</span></div>
-                </div>
-              </div>
-
-              <div class="skill level_7">
-                <h5>Database / SQL / NoSQL / MySQL / MongoDB / Firebase</h5>
-                <div class="bar">
-                  <div><span>70%</span></div>
-                </div>
-              </div>
-
-              <div class="skill level_7-5">
-                <h5>
-                  Designing / Material Design / Bootstrap / Bulma / Tailwind
-                </h5>
-                <div class="bar">
-                  <div><span>75%</span></div>
-                </div>
-              </div>
-
-              <div class="skill level_9">
-                <h5>REST APIs / GraphQL(Apollo) / Open Source / PWAs</h5>
-                <div class="bar">
-                  <div><span>90%</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <TheSkills />
 
         <!-- END #skills (panel 2) -->
 
@@ -835,166 +766,17 @@
 <script>
 import TheHeader from '@/components/TheHeader'
 import TheProfile from '@/components/TheProfile'
+import TheSkills from '@/components/TheSkills'
 export default {
   components: {
     TheHeader,
-    TheProfile
+    TheProfile,
+    TheSkills
   }
 }
 </script>
 
 <style scoped>
-.clearfix:after {
-  content: '';
-  display: block;
-  clear: both;
-  visibility: hidden;
-  font-size: 0;
-  height: 0;
-}
-
-.clearfix {
-  *display: inline-block;
-  height: 1%;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
-}
-:focus {
-  outline: 0;
-}
-ins,
-a {
-  text-decoration: none;
-}
-a,
-input[type='submit'],
-button[type='submit'] {
-  cursor: pointer;
-}
-del {
-  text-decoration: line-through;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
-/*========================================================
-
-	BEGIN Main
-
-========================================================*/
-
-address,
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-address {
-  color: #fff;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-input,
-textarea,
-select {
-  vertical-align: middle;
-}
-
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0;
-}
-button {
-  padding: 0;
-  border: none;
-  background: none;
-}
-
-iframe,
-object,
-embed {
-  width: 100%;
-  max-height: 100%;
-  float: left;
-}
-
-.center {
-  text-align: center;
-}
-
-.line {
-  width: 100%;
-  clear: both;
-  padding-bottom: 20px;
-  margin-bottom: 20px;
-  background: url('~assets/images/sep.png') bottom left repeat-x;
-}
-
-.under {
-  text-decoration: underline;
-}
-
-.none {
-  display: none;
-}
-
-.jump {
-  color: #fff;
-  font-size: 10px;
-  font-style: normal;
-  line-height: 25px;
-  text-align: center;
-  text-transform: uppercase;
-  width: 30px;
-  height: 25px;
-  padding: 5px;
-  display: block;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-  box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-/*========================================================
-
-	BEGIN Layout & Global Elements
-
-========================================================*/
-
 #main {
   width: 63%;
   float: right;
@@ -1005,24 +787,6 @@ img {
   padding: 0 30px 0 0;
   position: relative;
 }
-
-/* Box */
-
-.panel {
-  padding-top: 78px;
-  margin-bottom: 350px;
-  position: relative;
-}
-
-/* Columns */
-
-/*========================================================
-
-	BEGIN Side
-
-========================================================*/
-
-/* Secondary Nav */
 
 #secondary_nav {
   float: right;
@@ -1103,116 +867,6 @@ img {
 .current-menu-item {
   opacity: 1 !important;
 }
-
-/*========================================================
-
-	BEGIN Content
-
-========================================================*/
-
-/*=============================
-	
-		BEGIN Profile
-	
-	=============================*/
-
-/*=============================
-	
-		BEGIN Skills
-	
-	=============================*/
-
-.skill {
-  margin-bottom: 30px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-.skill .bar {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #fff;
-  height: 44px;
-  line-height: 44px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  margin-bottom: 10px;
-  background: #323439;
-}
-
-.skill .bar div {
-  height: 44px;
-  padding: 0 4%;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-.level_1 .bar div {
-  width: 2%;
-}
-.level_2 .bar div {
-  width: 12%;
-}
-.level_3 .bar div {
-  width: 22%;
-}
-.level_4 .bar div {
-  width: 32%;
-}
-.level_5 .bar div {
-  width: 42%;
-}
-.level_6 .bar div {
-  width: 52%;
-}
-.level_7 .bar div {
-  width: 62%;
-}
-.level_7-5 .bar div {
-  width: 67%;
-}
-.level_8 .bar div {
-  width: 72%;
-}
-.level_8-5 .bar div {
-  width: 77%;
-}
-.level_9 .bar div {
-  width: 82%;
-}
-.level_9-5 .bar div {
-  width: 87%;
-}
-.level_10 .bar div {
-  width: 92%;
-}
-
-.skill h5,
-.skill h6 {
-  margin-bottom: 5px;
-}
-
-.skill span {
-  font-size: 14px;
-  text-align: right;
-  display: inline-block;
-  float: right;
-}
-
-.skill-set {
-  margin-bottom: 15px;
-  clear: both;
-}
-
-/*=============================
-	
-		BEGIN Works
-	
-	=============================*/
 
 #works ul {
   width: 104%;

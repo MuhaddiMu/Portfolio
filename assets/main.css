@@ -109,63 +109,67 @@ td {
 	background: transparent;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
 	line-height: 1;
 }
 
 h1, h2, h3, h4, h5, h6 {
-		color: #fff;
-		font-family: "Montserrat", Helvetica, Arial, sans-serif;
-		font-weight: 400;
-		margin-bottom: 25px;
-		line-height: 1em;
-		letter-spacing: 2px;
-	}
+	color: #fff;
+	font-family: "Montserrat", Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	margin-bottom: 25px;
+	line-height: 1em;
+	letter-spacing: 2px;
+}
 
-	h1 {
-		font-size: 36px;
-		text-transform: uppercase;
-		letter-spacing: 7px;
-		line-height: 1.2em;
-	}
-	
-	h1 span {
-		font-weight: 300;
-	}
-	
-	h2 {
-		font-size: 24px;
-		line-height: 1.6em;
-		text-transform: uppercase;
-	}
-	
-	h3 {
-		font-size: 20px;
-		line-height: 1.6em;
-		letter-spacing: 0;
-	}
-	
-	h4 {
-		font-size: 16px;
-		font-weight: 400;
-		line-height: 28px;
-		text-transform: uppercase;
-	}
-	
-	h5 {
-		font-size: 12px;
-		font-weight: 300;
-		line-height: 1.7em;
-		text-transform: uppercase;
-	}
-	
-	h6 {
-		font-size: 10px;
-	}
-	
-	hr {
-		border: 1px solid #fff;
-  }
+h1 {
+	font-size: 36px;
+	text-transform: uppercase;
+	letter-spacing: 7px;
+	line-height: 1.2em;
+}
+
+h1 span {
+	font-weight: 300;
+}
+
+h2 {
+	font-size: 24px;
+	line-height: 1.6em;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 1.6em;
+	letter-spacing: 0;
+}
+
+h4 {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 28px;
+	text-transform: uppercase;
+}
+
+h5 {
+	font-size: 12px;
+	font-weight: 300;
+	line-height: 1.7em;
+	text-transform: uppercase;
+}
+
+h6 {
+	font-size: 10px;
+}
+
+hr {
+	border: 1px solid #fff;
+}
   
 body,
 h1 span,
@@ -381,46 +385,137 @@ a {
         box-shadow:  0px 1px 7px 0px rgba(00, 00, 00, .7);
 }
 
-#main img,
-.box .in {
-	max-width: 100%;
-	border-radius: 3px;
-	-moz-border-radius: 3px;
-	-webkit-border-radius: 3px;
-	-webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-	box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-}
-
-
-@media only screen and (max-width: 540px) {
-  .one-half,
-  .one-third,
-  .two-thirds,
-  .one-fourth,
-  .three-fourths,
-  .one-fifth,
-  .two-fifths,
-  .three-fifths,
-  .four-fifths,
-  .one-sixth {
-    width: 96%;
-  }
-
-  .skill .bar {
-    height: 24px;
-    line-height: 24px;
-  }
-
-  .skill .bar div {
-    height: 24px;
-  }
-
-  .post_left,
-  .post_right {
-    width: 100% !important;
-  }
-}
-
 h5 {
   margin-bottom: 10px;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+:focus {
+  outline: 0;
+}
+ins,
+a {
+  text-decoration: none;
+}
+a,
+input[type='submit'],
+button[type='submit'] {
+  cursor: pointer;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*========================================================
+
+	BEGIN Main
+
+========================================================*/
+
+address,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+address {
+  color: #fff;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+input,
+textarea,
+select {
+  vertical-align: middle;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+iframe,
+object,
+embed {
+  width: 100%;
+  max-height: 100%;
+  float: left;
+}
+
+.center {
+  text-align: center;
+}
+
+.line {
+  width: 100%;
+  clear: both;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  background: url('~assets/images/sep.png') bottom left repeat-x;
+}
+
+.under {
+  text-decoration: underline;
+}
+
+.none {
+  display: none;
+}
+
+.jump {
+  color: #fff;
+  font-size: 10px;
+  font-style: normal;
+  line-height: 25px;
+  text-align: center;
+  text-transform: uppercase;
+  width: 30px;
+  height: 25px;
+  padding: 5px;
+  display: block;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
+  box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }

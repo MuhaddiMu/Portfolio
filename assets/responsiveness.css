@@ -147,24 +147,33 @@
 	
 }
 
-@media only screen and (max-width : 540px) {
+@media only screen and (max-width: 540px) {
+  .one-half,
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .three-fourths,
+  .one-fifth,
+  .two-fifths,
+  .three-fifths,
+  .four-fifths,
+  .one-sixth {
+    width: 96%;
+  }
 
-	.one-half, .one-third, .two-thirds, .one-fourth, .three-fourths, .one-fifth, .two-fifths, .three-fifths, .four-fifths, .one-sixth { width: 96%; }
-	
-	.skill .bar {
-		height: 24px;
-		line-height: 24px;
-	}
-	
-	.skill .bar div {
-		height: 24px;
-	}
-	
-	.post_left,
-	.post_right {
-		width: 100% !important;
-	}
-	
+  .skill .bar {
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .skill .bar div {
+    height: 24px;
+  }
+
+  .post_left,
+  .post_right {
+    width: 100% !important;
+  }
 }
 
 @media only screen and (max-width : 320px) {
