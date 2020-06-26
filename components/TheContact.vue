@@ -1,0 +1,234 @@
+<template>
+  <div id="contact" class="panel box">
+    <div class="in">
+      <h2>Contact</h2>
+
+      <div class="two-fifths">
+        <p>
+          Please don&#8217;t hesitate to contact me for more information about
+          my work. I will reply when I&#8217;m available.
+        </p>
+
+        <address>
+          Email: Ask@Muhaddis.Info
+        </address>
+
+        <ul id="social">
+          <li class="facebook">
+            <a href="http://facebook.com/MuhaddiMu" target="_blank">Facebook</a>
+          </li>
+          <li class="twitter">
+            <a href="http://twitter.com/MuhaddiMu" target="_blank">Twitter</a>
+          </li>
+          <li class="linkedin">
+            <a href="https://www.linkedin.com/in/MuhaddiMu" target="_blank"
+              >LinkedIn</a
+            >
+          </li>
+        </ul>
+      </div>
+
+      <div class="three-fifths column-last">
+        <form id="contact_form">
+          <p>
+            <label
+              v-if="
+                !InputName.Toggle &&
+                  InputName.Value !== null &&
+                  InputName.Value == ''
+              "
+              >Name</label
+            >
+            <input
+              id="name"
+              v-model="InputName.Value"
+              type="text"
+              :class="{ Blurred: InputName.hasData }"
+              @focus="InputName.Toggle = true"
+              @blur="Blur('Name')"
+            />
+          </p>
+
+          <p>
+            <label
+              v-if="
+                !InputEmail.Toggle &&
+                  InputEmail.Value !== null &&
+                  InputEmail.Value == ''
+              "
+              >Email</label
+            >
+            <input
+              id="email"
+              v-model="InputEmail.Value"
+              type="text"
+              :class="{ Blurred: InputEmail.hasData }"
+              @focus="InputEmail.Toggle = true"
+              @blur="Blur('Email')"
+            />
+          </p>
+
+          <p>
+            <label
+              v-if="
+                !InputMessage.Toggle &&
+                  InputMessage.Value !== null &&
+                  InputMessage.Value == ''
+              "
+              >Message</label
+            >
+            <textarea
+              id="message"
+              v-model="InputMessage.Value"
+              rows="8"
+              cols="20"
+              :class="{ Blurred: InputMessage.hasData }"
+              @focus="InputMessage.Toggle = true"
+              @blur="Blur('Message')"
+            ></textarea>
+          </p>
+
+          <button id="submit_button" type="submit" name="submit" class="btn">
+            <span>Send Message</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data() {
+    return {
+      InputName: { Value: '', Toggle: false, hasData: false },
+      InputEmail: { Value: '', Toggle: false, hasData: false },
+      InputMessage: { Value: '', Toggle: false, hasData: false }
+    }
+  },
+  methods: {
+    Blur(arg) {
+      if (arg === 'Name') {
+        this.InputName.Toggle = false
+        if (this.InputName.Value !== '' && this.InputName.Value !== null) {
+          this.InputName.hasData = true
+        } else {
+          this.InputName.hasData = false
+        }
+      }
+      if (arg === 'Email') {
+        this.InputEmail.Toggle = false
+        if (this.InputEmail.Value !== '' && this.InputEmail.Value !== null) {
+          this.InputEmail.hasData = true
+        } else {
+          this.InputEmail.hasData = false
+        }
+      }
+      if (arg === 'Message') {
+        this.InputMessage.Toggle = false
+        if (
+          this.InputMessage.Value !== '' &&
+          this.InputMessage.Value !== null
+        ) {
+          this.InputMessage.hasData = true
+        } else {
+          this.InputMessage.hasData = false
+        }
+      }
+    }
+  }
+}
+</script>
+
+<style scoped>
+#contact_form {
+  width: 100%;
+  min-height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+#contact_form input,
+#contact_form textarea {
+  width: 93%;
+  height: 40px;
+  padding: 0 3%;
+  margin: 0 0 20px 0;
+  display: block;
+  font-size: 14px;
+  color: #fff;
+  border: none;
+  background: #eaeaea;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+}
+
+#contact_form textarea {
+  height: 120px;
+  padding-top: 10px;
+}
+
+#contact_form label {
+  position: absolute;
+  margin: 10px 0 0 10px;
+  display: block;
+  color: #a7abad;
+}
+
+#contact_form #loader {
+  position: absolute;
+  bottom: -33px;
+  right: 65px;
+  display: none;
+}
+
+#submit_button {
+  line-height: 24px;
+}
+
+#send_message {
+  color: #9ecb5f;
+}
+
+#social {
+  margin-top: 30px;
+}
+
+#social li {
+  float: left;
+  margin: 0 10px 10px 0;
+}
+
+#social li a {
+  width: 32px;
+  height: 32px;
+  display: block;
+  text-indent: -9999px;
+}
+
+#social .facebook a {
+  background: url('~assets/images/icons/social_facebook.png') top left no-repeat;
+}
+#social .twitter a {
+  background: url('~assets/images/icons/social_twitter.png') top left no-repeat;
+}
+#social .linkedin a {
+  background: url('~assets/images/icons/social_linkedin.png') top left no-repeat;
+}
+
+input[type='text'],
+textarea {
+  transition: background 200ms;
+}
+
+input[type='text']:focus,
+textarea:focus {
+  background-color: #323232 !important;
+  color: #fff !important;
+}
+
+.Blurred {
+  color: #323232 !important;
+}
+</style>

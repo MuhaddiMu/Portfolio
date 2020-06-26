@@ -1,42 +1,42 @@
 :root {
-	--color: #243746;
-	--color-primary: #158876;
-	--color-secondary: #0e2233;
-	--bg: #f3f5f4;
-	--bg-secondary: #fff;
-	--border-color: #ddd;
+  --color: #243746;
+  --color-primary: #158876;
+  --color-secondary: #0e2233;
+  --bg: #f3f5f4;
+  --bg-secondary: #fff;
+  --border-color: #ddd;
 }
 
 .dark-mode {
-	--color: #ebf4f1;
-	--color-primary: #41b38a;
-	--color-secondary: #fdf9f3;
-	--bg: #091a28;
-	--bg-secondary: #071521;
-	--border-color: #0d2538;
+  --color: #ebf4f1;
+  --color-primary: #41b38a;
+  --color-secondary: #fdf9f3;
+  --bg: #091a28;
+  --bg-secondary: #071521;
+  --border-color: #0d2538;
 }
 
 .sepia-mode {
-	--color: #433422;
-	--color-secondary: #504231;
-	--bg: #f1e7d0;
-	--bg-secondary: #eae0c9;
-	--border-color: #ded0bf;
+  --color: #433422;
+  --color-secondary: #504231;
+  --bg: #f1e7d0;
+  --bg-secondary: #eae0c9;
+  --border-color: #ded0bf;
 }
 
 /* Clearfix */
 .clearfix:after {
-	content: "";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	font-size: 0;
-	height: 0;
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  font-size: 0;
+  height: 0;
 }
 
 .clearfix {
-	*display: inline-block;
-	height: 1%;
+  *display: inline-block;
+  height: 1%;
 }
 
 html,
@@ -100,13 +100,13 @@ thead,
 tr,
 th,
 td {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	outline: 0;
-	font-size: 100%;
-	vertical-align: baseline;
-	background: transparent;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 html {
@@ -114,147 +114,159 @@ html {
 }
 
 body {
-	line-height: 1;
+  line-height: 1;
 }
 
-h1, h2, h3, h4, h5, h6 {
-	color: #fff;
-	font-family: "Montserrat", Helvetica, Arial, sans-serif;
-	font-weight: 400;
-	margin-bottom: 25px;
-	line-height: 1em;
-	letter-spacing: 2px;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+  font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  margin-bottom: 25px;
+  line-height: 1em;
+  letter-spacing: 2px;
 }
 
 h1 {
-	font-size: 36px;
-	text-transform: uppercase;
-	letter-spacing: 7px;
-	line-height: 1.2em;
+  font-size: 36px;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+  line-height: 1.2em;
 }
 
 h1 span {
-	font-weight: 300;
+  font-weight: 300;
 }
 
 h2 {
-	font-size: 24px;
-	line-height: 1.6em;
-	text-transform: uppercase;
+  font-size: 24px;
+  line-height: 1.6em;
+  text-transform: uppercase;
 }
 
 h3 {
-	font-size: 20px;
-	line-height: 1.6em;
-	letter-spacing: 0;
+  font-size: 20px;
+  line-height: 1.6em;
+  letter-spacing: 0;
 }
 
 h4 {
-	font-size: 16px;
-	font-weight: 400;
-	line-height: 28px;
-	text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  text-transform: uppercase;
 }
 
 h5 {
-	font-size: 12px;
-	font-weight: 300;
-	line-height: 1.7em;
-	text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 1.7em;
+  text-transform: uppercase;
 }
 
 h6 {
-	font-size: 10px;
+  font-size: 10px;
 }
 
 hr {
-	border: 1px solid #fff;
+  border: 1px solid #fff;
 }
-  
+
 body,
 h1 span,
 h5,
-.post .post_date h5,	
-#contact_form label,
-.widget_calendar #wp-calendar a {
-      font: 12px/22px "Open Sans", Helvetica, sans-serif;
-    }
+.post .post_date h5,
+#contact_form label {
+  font: 12px/22px 'Open Sans', Helvetica, sans-serif;
+}
 
-h1, h2, h3, h4, h5, h6,
-.post .post_bottom .cats ul li a, 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.post .post_bottom .cats ul li a,
 .format-link a,
 .widget ul li a,
-.btn, .tagcloud a, .widget_categories ul li a, .cats ul li a {
-      font-family: "Montserrat", sans-serif;
-  }
+.btn,
+.tagcloud a,
+.widget_categories ul li a,
+.cats ul li a {
+  font-family: 'Montserrat', sans-serif;
+}
 
 #side li,
 #social li {
-	list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-	quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
 
 :focus {
-	outline: 0;
+  outline: 0;
 }
 
 ins,
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a,
-input[type=submit],
-button[type=submit] {
-	cursor: pointer;
+input[type='submit'],
+button[type='submit'] {
+  cursor: pointer;
 }
 
 del {
-	text-decoration: line-through;
+  text-decoration: line-through;
 }
 
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 body {
-	background-color: var(--bg);
-	color: var(--color);
-	transition: background-color .3s;
-	display: block !important;
-	opacity: 1 !important;
+  background-color: var(--bg);
+  color: var(--color);
+  transition: background-color 0.3s;
+  display: block !important;
+  opacity: 1 !important;
 }
 
 a {
-	color: #fff;
-	font-style: italic;
-	text-decoration: none;
+  color: #fff;
+  font-style: italic;
+  text-decoration: none;
 }
 
 .vue-typer .custom.char.typed {
-	color: #fff;
+  color: #fff;
 }
 
 /* Columns */
 
 .full {
-	width: 100%;
-	clear: both;
-	margin-bottom: 25px;
-	overflow: hidden;
+  width: 100%;
+  clear: both;
+  margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .one-half,
@@ -267,60 +279,60 @@ a {
 .three-fifths,
 .four-fifths,
 .one-sixth {
-	float: left;
-	position: relative;
-	margin-right: 4%;
-	margin-bottom: 25px;
-	overflow: hidden;
+  float: left;
+  position: relative;
+  margin-right: 4%;
+  margin-bottom: 25px;
+  overflow: hidden;
 }
 
 .no-margin {
-	margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 .one-half {
-	width: 48%;
+  width: 48%;
 }
 
 .one-third {
-	width: 30.66%;
+  width: 30.66%;
 }
 
 .two-thirds {
-	width: 65.1%;
+  width: 65.1%;
 }
 
 .one-fourth {
-	width: 22%;
+  width: 22%;
 }
 
 .three-fourths {
-	width: 74%;
+  width: 74%;
 }
 
 .one-fifth {
-	width: 16.8%;
+  width: 16.8%;
 }
 
 .two-fifths {
-	width: 37.2%;
+  width: 37.2%;
 }
 
 .three-fifths {
-	width: 54.8%;
+  width: 54.8%;
 }
 
 .four-fifths {
-	width: 78.8%;
+  width: 78.8%;
 }
 
 .column-last {
-	margin-right: 0 !important;
-	clear: right;
+  margin-right: 0 !important;
+  clear: right;
 }
 
 /* Buttons */
-	
+
 .btn {
   height: 30px;
   line-height: 30px;
@@ -357,7 +369,7 @@ a {
 }
 
 /* Box */
-	
+
 .panel {
   padding-top: 78px;
   margin-bottom: 350px;
@@ -372,7 +384,7 @@ a {
   padding: 30px;
   margin-bottom: 20px;
   overflow: hidden;
-  background-color: rgba(0,0,0, 0.8)
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 #main img,
@@ -381,8 +393,8 @@ a {
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-  -webkit-box-shadow:  0px 1px 7px 0px rgba(00, 00, 00, .7);
-        box-shadow:  0px 1px 7px 0px rgba(00, 00, 00, .7);
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
+  box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
 }
 
 h5 {
