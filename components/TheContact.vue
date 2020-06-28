@@ -219,7 +219,10 @@ export default {
 
 input[type='text'],
 textarea {
-  transition: background 200ms;
+  transition: background 250ms;
+  -webkit-transition: background 250ms;
+  -o-transition: background 250ms;
+  transition: background 250ms;
 }
 
 input[type='text']:focus,
