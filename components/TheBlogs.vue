@@ -398,4 +398,9 @@ export default {}
   margin-bottom: 30px;
   overflow: hidden;
 }
+
+a:hover {
+  color: #ff4343;
+  transition: 250ms;
+}
 </style>
