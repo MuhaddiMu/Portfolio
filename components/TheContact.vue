@@ -37,13 +37,20 @@
                   InputName.Value !== null &&
                   InputName.Value == ''
               "
+              :class="{
+                ErrorLabel: InputName.Error
+              }"
               >Name</label
             >
             <input
               id="name"
               v-model="InputName.Value"
+              autocomplete="off"
               type="text"
-              :class="{ Blurred: InputName.hasData }"
+              :class="{
+                Blurred: InputName.hasData,
+                ErrorInput: InputName.Error
+              }"
               @focus="InputName.Toggle = true"
               @blur="Blur('Name')"
             />
@@ -56,13 +63,20 @@
                   InputEmail.Value !== null &&
                   InputEmail.Value == ''
               "
+              :class="{
+                ErrorLabel: InputEmail.Error
+              }"
               >Email</label
             >
             <input
               id="email"
               v-model="InputEmail.Value"
+              autocomplete="off"
               type="text"
-              :class="{ Blurred: InputEmail.hasData }"
+              :class="{
+                Blurred: InputEmail.hasData,
+                ErrorInput: InputEmail.Error
+              }"
               @focus="InputEmail.Toggle = true"
               @blur="Blur('Email')"
             />
@@ -75,20 +89,33 @@
                   InputMessage.Value !== null &&
                   InputMessage.Value == ''
               "
+              :class="{
+                ErrorLabel: InputMessage.Error
+              }"
               >Message</label
             >
             <textarea
               id="message"
               v-model="InputMessage.Value"
+              autocomplete="off"
               rows="8"
               cols="20"
-              :class="{ Blurred: InputMessage.hasData }"
+              :class="{
+                Blurred: InputMessage.hasData,
+                ErrorInput: InputMessage.Error
+              }"
               @focus="InputMessage.Toggle = true"
               @blur="Blur('Message')"
             ></textarea>
           </p>
 
-          <button id="submit_button" type="submit" name="submit" class="btn">
+          <button
+            id="submit_button"
+            type="submit"
+            name="submit"
+            class="btn"
+            @click="SubmitContactForm"
+          >
             <span>Send Message</span>
           </button>
         </form>
@@ -101,9 +128,10 @@
 export default {
   data() {
     return {
-      InputName: { Value: '', Toggle: false, hasData: false },
-      InputEmail: { Value: '', Toggle: false, hasData: false },
-      InputMessage: { Value: '', Toggle: false, hasData: false }
+      InputName: { Value: '', Toggle: false, hasData: false, Error: false },
+      InputEmail: { Value: '', Toggle: false, hasData: false, Error: false },
+      InputMessage: { Value: '', Toggle: false, hasData: false, Error: false },
+      isFormValid: false
     }
   },
   methods: {
@@ -112,16 +140,20 @@ export default {
         this.InputName.Toggle = false
         if (this.InputName.Value !== '' && this.InputName.Value !== null) {
           this.InputName.hasData = true
+          this.InputName.Error = false
         } else {
           this.InputName.hasData = false
+          this.InputName.Error = false
         }
       }
       if (arg === 'Email') {
         this.InputEmail.Toggle = false
         if (this.InputEmail.Value !== '' && this.InputEmail.Value !== null) {
           this.InputEmail.hasData = true
+          this.InputEmail.Error = false
         } else {
           this.InputEmail.hasData = false
+          this.InputEmail.Error = false
         }
       }
       if (arg === 'Message') {
@@ -131,9 +163,34 @@ export default {
           this.InputMessage.Value !== null
         ) {
           this.InputMessage.hasData = true
+          this.InputMessage.Error = false
         } else {
           this.InputMessage.hasData = false
+          this.InputMessage.Error = false
         }
+      }
+    },
+    SubmitContactForm() {
+      const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ //eslint-disable-line
+
+      if (this.InputName.Value === '' || this.InputName.Value === null) {
+        this.InputName.Error = true
+      } else {
+        this.isFormValid = true
+      }
+      if (
+        this.InputEmail.Value === '' ||
+        this.InputEmail.Value === null ||
+        emailRegex.test(this.InputEmail.Value) === false
+      ) {
+        this.InputEmail.Error = true
+      } else {
+        this.isFormValid = true
+      }
+      if (this.InputMessage.Value === '' || this.InputMessage.Value === null) {
+        this.InputMessage.Error = true
+      } else {
+        this.isFormValid = true
       }
     }
   }
@@ -215,6 +272,14 @@ export default {
 }
 #social .linkedin a {
   background: url('~assets/images/icons/social_linkedin.png') top left no-repeat;
+}
+
+.ErrorInput {
+  background-color: #ff4343 !important;
+}
+
+.ErrorLabel {
+  color: #fff !important;
 }
 
 input[type='text'],
