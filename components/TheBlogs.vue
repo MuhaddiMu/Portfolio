@@ -391,16 +391,16 @@ export default {}
 
 .post .post_title a {
   font-style: normal;
+  transition: 250ms;
+}
+
+.post .post_title a:hover {
+  color: #ff4343;
 }
 
 .post .post_thumb,
 .post .post_video {
   margin-bottom: 30px;
   overflow: hidden;
-}
-
-a:hover {
-  color: #ff4343;
-  transition: 250ms;
 }
 </style>

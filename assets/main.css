@@ -347,6 +347,9 @@ a {
   border: none;
   background: #323439;
   border-radius: 3px;
+  transition: background 250ms;
+  -webkit-transition: background 250ms;
+  -o-transition: background 250ms;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
 }
@@ -371,10 +374,6 @@ a {
 .btn:hover {
   background-color: #ff4343;
   color: #fff;
-  transition: background 250ms;
-  -webkit-transition: background 250ms;
-  -o-transition: background 250ms;
-  transition: background 250ms;
 }
 
 /* Box */

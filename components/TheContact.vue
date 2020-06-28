@@ -15,10 +15,12 @@
 
         <ul id="social">
           <li class="facebook">
-            <a href="http://facebook.com/MuhaddiMu" target="_blank">Facebook</a>
+            <a href="https://facebook.com/MuhaddiMu" target="_blank"
+              >Facebook</a
+            >
           </li>
           <li class="twitter">
-            <a href="http://twitter.com/MuhaddiMu" target="_blank">Twitter</a>
+            <a href="https://twitter.com/MuhaddiMu" target="_blank">Twitter</a>
           </li>
           <li class="linkedin">
             <a href="https://www.linkedin.com/in/MuhaddiMu" target="_blank"
@@ -255,6 +257,11 @@ export default {
 #social li {
   float: left;
   margin: 0 10px 10px 0;
+  opacity: 0.5;
+  transition: 200ms;
+}
+#social li:hover {
+  opacity: 1;
 }
 
 #social li a {
