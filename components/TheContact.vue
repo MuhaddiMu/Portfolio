@@ -229,9 +229,12 @@ export default {
 }
 
 #contact_form label {
+  font-size: 12px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: italic;
   position: absolute;
   margin: 10px 0 0 10px;
-  display: block;
   color: #a7abad;
 }
 
