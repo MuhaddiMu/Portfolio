@@ -14,6 +14,14 @@ export default {
         content: process.env.npm_package_description || ''
       }
     ],
+    noscript: [
+      {
+        id: 'sanitize',
+        hid: 'sanitize',
+        innerHTML: `<style type="text/css"> body { display: block !important; opacity: 1 !important; } </style>`
+      }
+    ],
+    __dangerouslyDisableSanitizers: ['noscript'],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       {
@@ -33,7 +41,7 @@ export default {
         src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
       },
       {
-        src: 'https://code.jquery.com/ui/1.12.0/jquery-ui.js'
+        src: 'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js'
       }
     ]
   },

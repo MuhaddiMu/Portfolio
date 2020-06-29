@@ -2,8 +2,9 @@
   <div id="profile" class="panel">
     <img
       id="photo"
-      src="https://muhaddis.info/wp-content/uploads/2016/06/Muhaddis-700x1050.jpg"
-      alt="Muhaddis"
+      src="/Muhaddis-700x1050.jpg"
+      loading="lazy"
+      alt="Muhaddis Profile Image"
     />
 
     <div class="box">

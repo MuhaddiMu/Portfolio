@@ -245,8 +245,9 @@ table {
 body {
   background-color: var(--bg);
   color: var(--color);
-  transition: background-color 0.3s;
-  display: block !important;
+  padding: 0;
+  margin: 0;
+  opacity: 0; /* For page fade in, open "~/plugins/jQuey.client.js" */
 }
 
 a {

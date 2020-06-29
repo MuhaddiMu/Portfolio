@@ -8,6 +8,8 @@ if (process.client) {
     var body = jQuery('body')
     var screenWidth = body.width()
 
+    body.delay(100).animate({ opacity: 1 }, 100, 'easeInOutCirc')
+
     if (screenWidth > 880) {
       jQuery('#control')
         .css({ left: '-36%' })
