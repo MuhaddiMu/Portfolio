@@ -46,25 +46,6 @@ if (process.client) {
       nav.find('li:first').addClass('active')
     }
 
-    navLink.css({ opacity: 0.5 })
-
-    /* Hover */
-
-    navLink.hover(
-      function() {
-        jQuery(this)
-          .stop(true, true)
-          .animate({ opacity: 1 }, 200)
-      },
-      function() {
-        jQuery(this)
-          .stop(true, true)
-          .animate({ opacity: 0.5 }, 200)
-      }
-    )
-
-    /* Active */
-
     var topMenu = jQuery('#nav ul'),
       topMenuHeight = topMenu.outerHeight() + 15,
       menuItems = topMenu.find('a'),
