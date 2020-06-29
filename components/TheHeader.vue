@@ -125,6 +125,12 @@
   margin-bottom: 30px;
   float: right;
   clear: both;
+  opacity: 0.5;
+  transition: 250ms;
+}
+
+#side #nav ul li:hover {
+  opacity: 1;
 }
 
 #side #nav ul li a,
