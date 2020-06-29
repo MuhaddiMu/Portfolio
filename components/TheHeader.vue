@@ -1,32 +1,31 @@
 <template>
   <header id="control">
     <div id="side">
-      <!-- BEGIN #logo-->
       <div id="logo">
         <h1>
           <a href="https://www.muhaddis.info/"
             ><img src="@/assets/images/logo.png" alt="Muhaddis"
           /></a>
         </h1>
-        <h4 class="sub">
-          <vue-typer
-            :repeat="Infinity"
-            :text="['Security Researcher', 'Web Developer']"
-            erase-style="backspace"
-            :erase-delay="50"
-            :pre-type-delay="500"
-            :type-delay="100"
-            caret-animation="expand"
-          ></vue-typer>
-        </h4>
+        <client-only>
+          <h4 class="sub">
+            <vue-typer
+              :repeat="Infinity"
+              :text="['Security Researcher', 'Web Developer']"
+              erase-style="backspace"
+              :erase-delay="50"
+              :pre-type-delay="500"
+              :type-delay="100"
+              caret-animation="expand"
+            ></vue-typer>
+          </h4>
+        </client-only>
       </div>
-      <!-- END #logo -->
 
-      <!-- BEGIN #nav -->
       <nav id="nav">
         <!-- Screen Size > 880px -->
         <ul class="regular">
-          <li class="nav_1 active">
+          <li class="nav_1">
             <a v-smooth-scroll href="#profile">Profile<span></span></a>
           </li>
           <li class="nav_2">
@@ -62,7 +61,6 @@
           </li>
         </ul>
       </nav>
-      <!-- END #nav -->
     </div>
   </header>
 </template>

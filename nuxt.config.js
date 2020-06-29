@@ -27,6 +27,11 @@ export default {
         type: 'text/css',
         href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700'
       }
+    ],
+    script: [
+      {
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+      }
     ]
   },
   /*
@@ -42,7 +47,8 @@ export default {
    */
   plugins: [
     { src: '~/plugins/vue-typer', ssr: false },
-    { src: '~/plugins/smooth-scroll', ssr: false }
+    { src: '~/plugins/smooth-scroll', ssr: false },
+    { src: '~/plugins/jQuery.client.js', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules

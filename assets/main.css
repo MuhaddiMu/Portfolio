@@ -247,7 +247,6 @@ body {
   color: var(--color);
   transition: background-color 0.3s;
   display: block !important;
-  opacity: 1 !important;
 }
 
 a {
