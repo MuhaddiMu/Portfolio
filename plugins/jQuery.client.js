@@ -1,11 +1,41 @@
 /* eslint-disable*/
 if (process.client) {
+  jQuery.noConflict()
+
   jQuery(document).ready(function() {
     // Variables
 
     var body = jQuery('body')
+    var screenWidth = body.width()
 
-    // Menu Animation
+    if (screenWidth > 880) {
+      jQuery('#control')
+        .css({ left: '-36%' })
+        .delay(300)
+        .animate({ left: '0' }, 700, 'easeInOutCirc')
+      jQuery('#main')
+        .css({ opacity: 0 })
+        .delay(1000)
+        .animate({ opacity: 1 }, 900, 'easeInOutCirc')
+      height = jQuery(window).height() - 580
+    } else {
+      height = jQuery(window).height() - 682
+    }
+    var screenWidth = body.width()
+
+    if (screenWidth > 880) {
+      jQuery('#control')
+        .css({ left: '-36%' })
+        .delay(300)
+        .animate({ left: '0' }, 700, 'easeInOutCirc')
+      jQuery('#main')
+        .css({ opacity: 0 })
+        .delay(1000)
+        .animate({ opacity: 1 }, 900, 'easeInOutCirc')
+      height = jQuery(window).height() - 580
+    } else {
+      height = jQuery(window).height() - 682
+    }
 
     var nav = jQuery('#nav')
     navLink = jQuery('#nav li, #secondary_nav li')
