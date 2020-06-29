@@ -557,6 +557,13 @@ img {
   height: auto;
 }
 
+.nav_on,
+.active,
+.current_page_item,
+.current-menu-item {
+  opacity: 1 !important;
+}
+
 /* Transitions */
 
 .fade-enter-active,

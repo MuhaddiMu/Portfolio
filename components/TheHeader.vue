@@ -26,7 +26,7 @@
       <nav id="nav">
         <!-- Screen Size > 880px -->
         <ul class="regular">
-          <li class="nav_1">
+          <li class="nav_1 active">
             <a v-smooth-scroll href="#profile">Profile<span></span></a>
           </li>
           <li class="nav_2">

@@ -27,6 +27,9 @@
               >LinkedIn</a
             >
           </li>
+          <li class="github">
+            <a href="https://github.com/MuhaddiMu" target="_blank">GitHub</a>
+          </li>
         </ul>
       </div>
 
@@ -276,12 +279,20 @@ export default {
 
 #social .facebook a {
   background: url('~assets/images/icons/social_facebook.png') top left no-repeat;
+  background-size: 32px 32px;
 }
 #social .twitter a {
   background: url('~assets/images/icons/social_twitter.png') top left no-repeat;
+  background-size: 32px 32px;
 }
 #social .linkedin a {
   background: url('~assets/images/icons/social_linkedin.png') top left no-repeat;
+  background-size: 32px 32px;
+}
+
+#social .github a {
+  background: url('~assets/images/icons/social_github.png') top left no-repeat;
+  background-size: 32px 32px;
 }
 
 .ErrorInput {
