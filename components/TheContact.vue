@@ -34,7 +34,7 @@
       </div>
 
       <div class="three-fifths column-last">
-        <form id="contact_form">
+        <form id="contact_form" @submit="SubmitContactForm">
           <p>
             <label
               v-if="
@@ -114,13 +114,7 @@
             ></textarea>
           </p>
 
-          <button
-            id="submit_button"
-            type="submit"
-            name="submit"
-            class="btn"
-            @click="SubmitContactForm"
-          >
+          <button id="submit_button" type="submit" class="btn">
             <span>Send Message</span>
           </button>
         </form>
@@ -175,7 +169,9 @@ export default {
         }
       }
     },
-    SubmitContactForm() {
+    SubmitContactForm(e) {
+      e.preventDefault()
+
       const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ //eslint-disable-line
 
       if (this.InputName.Value === '' || this.InputName.Value === null) {
