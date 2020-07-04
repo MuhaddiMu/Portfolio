@@ -20,7 +20,7 @@
             ></vue-typer>
           </h4>
         </client-only>
-        <noscript>
+        <noscript inline-template>
           <h4 class="sub">
             Security Researcher
           </h4>
