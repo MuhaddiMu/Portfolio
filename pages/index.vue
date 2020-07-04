@@ -34,3 +34,16 @@ export default {
   }
 }
 </script>
+<style>
+@media only screen and (max-width: 880px) {
+  #main {
+    width: 100%;
+    opacity: 1 !important;
+  }
+
+  #main #content {
+    max-width: none;
+    padding: 0 20px;
+  }
+}
+</style>

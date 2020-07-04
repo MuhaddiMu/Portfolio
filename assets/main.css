@@ -573,3 +573,49 @@ img {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+
+/* Responsiveness */
+
+@media only screen and (max-width: 880px) {
+  .panel {
+    padding-top: 180px;
+  }
+
+  .skill .bar {
+    height: 32px;
+    line-height: 32px;
+  }
+
+  .skill .bar div {
+    height: 32px;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .one-half,
+  .one-third,
+  .two-thirds,
+  .one-fourth,
+  .three-fourths,
+  .one-fifth,
+  .two-fifths,
+  .three-fifths,
+  .four-fifths,
+  .one-sixth {
+    width: 96%;
+  }
+
+  .skill .bar {
+    height: 24px;
+    line-height: 24px;
+  }
+
+  .skill .bar div {
+    height: 24px;
+  }
+
+  .post_left,
+  .post_right {
+    width: 100% !important;
+  }
+}

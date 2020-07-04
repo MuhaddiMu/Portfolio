@@ -324,4 +324,10 @@ export default {}
 #works ul li .info h4 a {
   font-style: normal;
 }
+
+@media only screen and (max-width: 320px) {
+  #works ul li {
+    width: 100%;
+  }
+}
 </style>

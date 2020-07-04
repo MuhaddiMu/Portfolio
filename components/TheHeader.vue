@@ -20,6 +20,11 @@
             ></vue-typer>
           </h4>
         </client-only>
+        <noscript>
+          <h4 class="sub">
+            Security Researcher
+          </h4>
+        </noscript>
       </div>
 
       <nav id="nav">
@@ -179,5 +184,125 @@
 #side #nav ul .nav_6 span {
   height: 16px;
   background: url('~assets/images/nav.png') bottom right no-repeat;
+}
+
+@media only screen and (max-width: 880px) {
+  #control {
+    width: 100%;
+    height: 150px;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    z-index: 10001;
+  }
+
+  #control #side {
+    width: 88%;
+    padding: 20px 6% 0 6%;
+    float: none;
+    overflow: hidden;
+  }
+
+  #control #side #logo {
+    width: 100%;
+    float: left;
+    text-align: center;
+  }
+
+  #control #side #logo h1 {
+    font-size: 24px;
+    margin: 0 -5px 8px 0;
+    text-align: center;
+  }
+
+  #control #side #logo .sub {
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+
+  #control #side #logo a {
+    width: 214px;
+    margin: 0 auto;
+    float: none;
+  }
+
+  #control #side #nav {
+    float: left;
+    position: relative;
+    margin: 0;
+  }
+
+  #control #side #nav .mobile {
+    clear: left;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    display: block;
+  }
+  #control #side #nav .regular {
+    display: none;
+  }
+
+  #control #side #nav ul li {
+    width: auto;
+    display: block;
+    clear: none;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    right: 50%;
+    height: 26px;
+    margin: 0 10px;
+  }
+
+  #control #side #nav ul li span {
+    margin: 0;
+  }
+
+  #secondary_nav {
+    width: 100%;
+    height: 12px;
+    padding-top: 16px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url('~assets/images/trans.png') repeat;
+  }
+
+  #secondary_nav > ul {
+    clear: left;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    left: 50%;
+    text-align: center;
+    display: block;
+  }
+
+  #secondary_nav > ul > li {
+    width: auto;
+    display: block;
+    clear: none;
+    float: left;
+    list-style: none;
+    position: relative;
+    right: 50%;
+  }
+
+  #secondary_nav ul li ul {
+    left: 0;
+    margin-right: 0;
+  }
+
+  #secondary_nav ul li ul li a {
+    text-align: left;
+  }
 }
 </style>
