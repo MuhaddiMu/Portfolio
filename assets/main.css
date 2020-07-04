@@ -1,27 +1,5 @@
 :root {
-  --color: #243746;
-  --color-primary: #158876;
-  --color-secondary: #0e2233;
-  --bg: #f3f5f4;
-  --bg-secondary: #fff;
-  --border-color: #ddd;
-}
-
-.dark-mode {
-  --color: #ebf4f1;
-  --color-primary: #41b38a;
-  --color-secondary: #fdf9f3;
-  --bg: #091a28;
-  --bg-secondary: #071521;
-  --border-color: #0d2538;
-}
-
-.sepia-mode {
-  --color: #433422;
-  --color-secondary: #504231;
-  --bg: #f1e7d0;
-  --bg-secondary: #eae0c9;
-  --border-color: #ded0bf;
+  --bg: #000;
 }
 
 /* Clearfix */
@@ -245,9 +223,16 @@ table {
 body {
   background-color: var(--bg);
   color: var(--color);
+  background-image: url('/Background.jpg');
   padding: 0;
   margin: 0;
   opacity: 0; /* For page fade in, open "~/plugins/jQuey.client.js" */
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
 }
 
 a {
