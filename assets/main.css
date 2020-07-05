@@ -221,17 +221,15 @@ table {
 }
 
 body {
-  background-color: var(--bg);
-  color: var(--color);
-  background-image: url('/Background.jpg');
+  background-color: var(--bg) !important;
+  color: var(--color) !important;
+  background: url('/Background.jpg') no-repeat center center fixed;
   padding: 0;
   margin: 0;
   opacity: 0; /* For page fade in, open "~/plugins/jQuey.client.js" */
-  background-attachment: fixed;
-  background-position: center center;
-  background-repeat: no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
 }
 
