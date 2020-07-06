@@ -91,10 +91,6 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  line-height: 1;
-}
-
 h1,
 h2,
 h3,
@@ -378,16 +374,6 @@ a {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-#main img,
-.box .in {
-  max-width: 100%;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-  box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
-}
-
 #main {
   width: 63%;
   float: right;
@@ -535,11 +521,6 @@ embed {
   opacity: 1;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-}
-
 .nav_on,
 .active,
 .current_page_item,
@@ -559,21 +540,6 @@ img {
 
 /* Responsiveness */
 
-@media only screen and (max-width: 880px) {
-  .panel {
-    padding-top: 180px;
-  }
-
-  .skill .bar {
-    height: 32px;
-    line-height: 32px;
-  }
-
-  .skill .bar div {
-    height: 32px;
-  }
-}
-
 @media only screen and (max-width: 540px) {
   .one-half,
   .one-third,
@@ -586,15 +552,6 @@ img {
   .four-fifths,
   .one-sixth {
     width: 96%;
-  }
-
-  .skill .bar {
-    height: 24px;
-    line-height: 24px;
-  }
-
-  .skill .bar div {
-    height: 24px;
   }
 
   .post_left,

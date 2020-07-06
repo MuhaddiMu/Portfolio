@@ -3,60 +3,73 @@
     <div class="in">
       <h2>Skills</h2>
 
-      <p>Here below some of my Interests and Skills are listed below.</p>
-
       <div class="clearfix"></div>
 
       <div class="skill-set">
-        <h3 class="line">Expertism</h3>
-        <div class="skill level_9-5">
-          <h5>
-            Cyber Security / Security Engineering / Penetration Testing /
-            Application Security
-          </h5>
-          <div class="bar">
-            <div><span>95%</span></div>
+        <div class="card">
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Vuejs.svg" />
+            <span>Vue.Js</span>
           </div>
-        </div>
-
-        <div class="skill level_8">
-          <h5>
-            Backend Web Development / PHP / Node.js / Express / Laravel / Django
-          </h5>
-          <div class="bar">
-            <div><span>80%</span></div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Nuxtjs.svg" />
+            <span>Nuxt.Js</span>
           </div>
-        </div>
-
-        <div class="skill level_8-5">
-          <h5>
-            Frontend Web Development / JavaScript / jQuery / Vue.js / React.js
-          </h5>
-          <div class="bar">
-            <div><span>85%</span></div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>React.Js</span>
           </div>
-        </div>
-
-        <div class="skill level_7">
-          <h5>Database / SQL / NoSQL / MySQL / MongoDB / Firebase</h5>
-          <div class="bar">
-            <div><span>70%</span></div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Python.svg" />
+            <span>Python</span>
           </div>
-        </div>
-
-        <div class="skill level_7-5">
-          <h5>
-            Designing / Material Design / Bootstrap / Bulma / Tailwind
-          </h5>
-          <div class="bar">
-            <div><span>75%</span></div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Git.svg" />
+            <span>Git</span>
           </div>
-        </div>
-
-        <div class="skill level_9">
-          <h5>REST APIs / GraphQL(Apollo) / Open Source / PWAs</h5>
-          <div class="bar">
-            <div><span>90%</span></div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/AWS.svg" />
+            <span>AWS</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>Web Component</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>LitElement</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>Node.js</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>Electron</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>MongoDB</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>Webpack</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>Gulp</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>Git</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>Azure</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <span>Docker</span>
           </div>
         </div>
       </div>
@@ -68,94 +81,72 @@
 export default {}
 </script>
 
-<style scoped>
-.skill {
-  margin-bottom: 30px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-.skill .bar {
-  font-family: 'Montserrat', sans-serif;
-  text-transform: uppercase;
-  font-weight: 500;
-  color: #fff;
-  height: 44px;
-  line-height: 44px;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-  margin-bottom: 10px;
-  background: #323439;
-}
-
-.skill .bar div {
-  height: 44px;
-  padding: 0 4%;
-  border-radius: 3px;
-  -moz-border-radius: 3px;
-  -webkit-border-radius: 3px;
-}
-
-.level_1 .bar div {
-  width: 2%;
-}
-.level_2 .bar div {
-  width: 12%;
-}
-.level_3 .bar div {
-  width: 22%;
-}
-.level_4 .bar div {
-  width: 32%;
-}
-.level_5 .bar div {
-  width: 42%;
-}
-.level_6 .bar div {
-  width: 52%;
-}
-.level_7 .bar div {
-  width: 62%;
-}
-.level_7-5 .bar div {
-  width: 67%;
-}
-.level_8 .bar div {
-  width: 72%;
-}
-.level_8-5 .bar div {
-  width: 77%;
-}
-.level_9 .bar div {
-  width: 82%;
-}
-.level_9-5 .bar div {
-  width: 87%;
-}
-.level_10 .bar div {
-  width: 92%;
-}
-
-.skill h5,
-.skill h6 {
-  margin-bottom: 5px;
-}
-
-.skill span {
-  float: right;
-  font-size: 14px;
-  text-align: right;
-  display: inline-block;
-}
-
+<style>
 .skill-set {
   margin-bottom: 15px;
   clear: both;
 }
 
-.skill .bar div {
-  background: #ff4343;
+.skill-set h2 {
+  margin: 0;
+  margin-bottom: 48px;
+}
+.skill-set h3 {
+  margin: 0;
+  margin-bottom: 72px;
+}
+.skill-set .card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1024px) {
+  .skill-set .card {
+    justify-content: center;
+  }
+}
+.skill-set .card .item {
+  width: 128px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 48px;
+  overflow: hidden;
+  cursor: pointer;
+}
+@media screen and (max-width: 1024px) {
+  .skill-set .card .item {
+    width: 100px;
+  }
+  .skill-set .card .item span {
+    -webkit-transform: translateY(0) !important;
+    transform: translateY(0) !important;
+    font-size: 0.8em;
+  }
+  .skill-set .card .item img {
+    height: 48px !important;
+  }
+}
+.skill-set .card .item:hover span {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  transition: all 0.3s ease;
+}
+.skill-set .card .item img {
+  height: 64px;
+  align-self: center;
+}
+.skill-set .card .item span {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  margin-top: 8px;
+  -webkit-transform: translateY(150%);
+  transform: translateY(150%);
+  transition: all 0.3s ease;
+  text-align: center;
+  white-space: nowrap;
 }
 </style>

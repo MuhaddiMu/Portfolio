@@ -79,4 +79,14 @@ export default {}
   line-height: 36px;
   margin-bottom: 30px;
 }
+
+#photo,
+.box .in {
+  max-width: 100%;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
+  box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
+}
 </style>
