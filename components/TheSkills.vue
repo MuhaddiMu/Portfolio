@@ -1,12 +1,64 @@
 <template>
   <div id="skills" class="panel box">
     <div class="in">
-      <h2>Skills</h2>
+      <h2>Skills / Expertise</h2>
 
       <div class="clearfix"></div>
 
       <div class="skill-set">
         <div class="card">
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Security.svg" />
+            <span>Application Security</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Penetration-Testing.svg" />
+            <span>Penetration Testing</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/BurpSuite.svg" />
+            <span>Burp Suite</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/AWS.svg" />
+            <span>AWS</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Docker.png" />
+            <span>Docker</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Kubernetes.svg" />
+            <span>Kubernetes</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Git.svg" />
+            <span>Git</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/PostgreSQL.svg" />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/MongoDB.svg" />
+            <span>MongoDB</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Firebase.svg" />
+            <span>Firebase</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Laravel.svg" />
+            <span>Laravel</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Python.svg" />
+            <span>Python</span>
+          </div>
+          <div class="item">
+            <img src="@/assets/images/skills-assets/Nodejs.svg" />
+            <span>Node.Js</span>
+          </div>
           <div class="item">
             <img src="@/assets/images/skills-assets/Vuejs.svg" />
             <span>Vue.Js</span>
@@ -16,60 +68,12 @@
             <span>Nuxt.Js</span>
           </div>
           <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
+            <img src="@/assets/images/skills-assets/Reactjs.svg" />
             <span>React.Js</span>
           </div>
           <div class="item">
-            <img src="@/assets/images/skills-assets/Python.svg" />
-            <span>Python</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/Git.svg" />
-            <span>Git</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/AWS.svg" />
-            <span>AWS</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>Web Component</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>LitElement</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>Node.js</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>Electron</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>MongoDB</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>Webpack</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>Gulp</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>Git</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>Azure</span>
-          </div>
-          <div class="item">
-            <img src="@/assets/images/skills-assets/ReactJs.svg" />
-            <span>Docker</span>
+            <img src="@/assets/images/skills-assets/GraphQL.svg" />
+            <span>GraphQL</span>
           </div>
         </div>
       </div>
