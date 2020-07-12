@@ -72,16 +72,16 @@ export default {}
 
 <style scoped>
 #honors ul {
-  width: 104%;
+  column-count: 2;
+  column-gap: 5;
+  width: 100%;
   overflow: hidden;
 }
 
 #honors ul li {
-  width: 46%;
-  padding-right: 4%;
-  margin-bottom: 10px;
+  display: inline-block;
+  width: 100%;
   overflow: hidden;
-  float: left;
 }
 
 #honors ul li a {
@@ -90,29 +90,11 @@ export default {}
 }
 
 #honors ul li a img {
-  float: left;
   max-width: 100%;
+  width: 100%;
   border-radius: 3px;
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
-}
-
-#honors ul li .info {
-  clear: both;
-}
-
-#honors ul li .work_vid {
-  margin-bottom: 10px;
-  overflow: hidden;
-}
-
-#honors ul li img,
-#honors ul li .info h4 {
-  margin-bottom: 10px;
-}
-
-#honors ul li .info h4 a {
-  font-style: normal;
 }
 
 @media only screen and (max-width: 320px) {
