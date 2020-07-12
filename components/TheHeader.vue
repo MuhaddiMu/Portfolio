@@ -30,38 +30,44 @@
       <nav id="nav">
         <!-- Screen Size > 880px -->
         <ul class="regular">
-          <li class="nav_1 active">
+          <li class="profile-nav active">
             <a v-smooth-scroll href="#profile">Profile<span></span></a>
           </li>
-          <li class="nav_2">
+          <li class="skills-nav">
             <a v-smooth-scroll href="#skills">Skills<span></span></a>
           </li>
-          <li class="nav_3">
+          <li class="honors-nav">
+            <a v-smooth-scroll href="#skills">Honors<span></span></a>
+          </li>
+          <li class="works-nav">
             <a v-smooth-scroll href="#works">Works<span></span></a>
           </li>
-          <li class="nav_5">
+          <li class="blog-nav">
             <a v-smooth-scroll href="#blog">Blog<span></span></a>
           </li>
-          <li class="nav_6">
+          <li class="contact-nav">
             <a v-smooth-scroll href="#contact">Contact<span></span></a>
           </li>
         </ul>
 
         <!-- Screen Size < 880px -->
         <ul class="mobile">
-          <li class="nav_1">
+          <li class="profile-nav">
             <a v-smooth-scroll href="#profile"><span></span></a>
           </li>
-          <li class="nav_2">
+          <li class="skills-nav">
             <a v-smooth-scroll href="#skills"><span></span></a>
           </li>
-          <li class="nav_3">
+          <li class="honors-nav">
+            <a v-smooth-scroll href="#skills"><span></span></a>
+          </li>
+          <li class="works-nav">
             <a v-smooth-scroll href="#works"><span></span></a>
           </li>
-          <li class="nav_5">
+          <li class="blog-nav">
             <a v-smooth-scroll href="#blog"><span></span></a>
           </li>
-          <li class="nav_6">
+          <li class="contact-nav">
             <a v-smooth-scroll href="#contact"><span></span></a>
           </li>
         </ul>
@@ -156,34 +162,34 @@
   display: block;
 }
 
-#side #nav ul .nav_1 span {
-  height: 17px;
+#side #nav ul .profile-nav span {
+  height: 23px;
   background: url('~assets/images/nav.png') top right no-repeat;
 }
 
-#side #nav ul .nav_2 span {
-  height: 16px;
+#side #nav ul .skills-nav span {
+  height: 23px;
   background: url('~assets/images/nav.png') right -47px no-repeat;
 }
 
-#side #nav ul .nav_3 span {
-  height: 21px;
+#side #nav ul .works-nav span {
+  height: 23px;
   background: url('~assets/images/nav.png') right -93px no-repeat;
 }
 
-#side #nav ul .nav_4 span {
-  height: 22px;
-  background: url('~assets/images/nav.png') right -141px no-repeat;
-}
-
-#side #nav ul .nav_5 span {
+#side #nav ul .blog-nav span {
   height: 23px;
   background: url('~assets/images/nav.png') right -193px no-repeat;
 }
 
-#side #nav ul .nav_6 span {
-  height: 16px;
+#side #nav ul .contact-nav span {
+  height: 23px;
   background: url('~assets/images/nav.png') bottom right no-repeat;
+}
+
+#side #nav ul .honors-nav span {
+  height: 23px;
+  background: url('~assets/images/honors-nav.png') right;
 }
 
 @media only screen and (max-width: 880px) {
