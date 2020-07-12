@@ -5,6 +5,7 @@
       <div id="content">
         <TheProfile />
         <TheSkills />
+        <TheHonors />
         <TheWorks />
         <TheBlogs />
         <TheContact />
@@ -18,6 +19,7 @@
 import TheHeader from '@/components/TheHeader'
 import TheProfile from '@/components/TheProfile'
 import TheSkills from '@/components/TheSkills'
+import TheHonors from '@/components/TheHonors'
 import TheWorks from '@/components/TheWorks'
 import TheBlogs from '@/components/TheBlogs'
 import ScrollToTop from '@/components/TheContact'
@@ -27,6 +29,7 @@ export default {
     TheHeader,
     TheProfile,
     TheSkills,
+    TheHonors,
     TheWorks,
     TheBlogs,
     TheContact,

@@ -37,7 +37,7 @@
             <a v-smooth-scroll href="#skills">Skills<span></span></a>
           </li>
           <li class="honors-nav">
-            <a v-smooth-scroll href="#skills">Honors<span></span></a>
+            <a v-smooth-scroll href="#honors">Honors<span></span></a>
           </li>
           <li class="works-nav">
             <a v-smooth-scroll href="#works">Works<span></span></a>
@@ -59,7 +59,7 @@
             <a v-smooth-scroll href="#skills"><span></span></a>
           </li>
           <li class="honors-nav">
-            <a v-smooth-scroll href="#skills"><span></span></a>
+            <a v-smooth-scroll href="#honors"><span></span></a>
           </li>
           <li class="works-nav">
             <a v-smooth-scroll href="#works"><span></span></a>
