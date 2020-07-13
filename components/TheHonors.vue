@@ -46,7 +46,7 @@ export default {
   font-style: normal;
 }
 
-#honors ul li a img {
+#honors ul li img {
   max-width: 100%;
   width: 100%;
   border-radius: 3px;

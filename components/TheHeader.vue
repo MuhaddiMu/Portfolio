@@ -163,33 +163,33 @@
 }
 
 #side #nav ul .profile-nav span {
-  height: 23px;
+  height: 24px;
   background: url('~assets/images/nav.png') top right no-repeat;
 }
 
 #side #nav ul .skills-nav span {
-  height: 23px;
-  background: url('~assets/images/nav.png') right -47px no-repeat;
+  height: 24px;
+  background: url('~assets/images/skills-nav.png') right no-repeat;
 }
 
 #side #nav ul .works-nav span {
-  height: 23px;
+  height: 24px;
   background: url('~assets/images/nav.png') right -93px no-repeat;
 }
 
 #side #nav ul .blog-nav span {
-  height: 23px;
+  height: 24px;
   background: url('~assets/images/nav.png') right -193px no-repeat;
 }
 
 #side #nav ul .contact-nav span {
-  height: 23px;
+  height: 24px;
   background: url('~assets/images/nav.png') bottom right no-repeat;
 }
 
 #side #nav ul .honors-nav span {
-  height: 23px;
-  background: url('~assets/images/honors-nav.png') right;
+  height: 24px;
+  background: url('~assets/images/honors-nav.png') right no-repeat;
 }
 
 @media only screen and (max-width: 880px) {
