@@ -41,11 +41,6 @@ export default {
   overflow: hidden;
 }
 
-#honors ul li a {
-  display: block;
-  font-style: normal;
-}
-
 #honors ul li img {
   max-width: 100%;
   width: 100%;
