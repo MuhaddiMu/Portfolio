@@ -12,7 +12,7 @@
           A wonderful serenity has taken possession of my entire soul, like
           these sweet mornings of spring which I enjoy with my whole heart.
         </p>
-        <a href="#" class="info">Read More</a>
+        <a href="#" class="info btn">Read More</a>
       </div>
     </div>
   </li>
@@ -61,13 +61,13 @@
   position: relative;
   color: #fff;
   padding: 10px 20px 20px;
+  margin-bottom: unset;
   text-align: center;
 }
 .view a.info {
   display: none;
   text-decoration: none;
   font-style: normal;
-  padding: 7px 14px;
   background: #000;
   color: #fff;
   text-transform: uppercase;
@@ -95,6 +95,10 @@
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
+.view-first a.info:hover {
+  background-color: #ff4343;
+  color: #fff;
+}
 
 .view-first:hover img {
   transform: scale(1.1);
@@ -116,7 +120,6 @@
   display: block;
 }
 .view-first:hover a.info {
-  transition-delay: 0.2s;
   display: inline-block;
 }
 @media only screen and (max-width: 600px) {

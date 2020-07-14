@@ -115,7 +115,7 @@
           </p>
 
           <button id="submit_button" type="submit" class="btn">
-            <span>Send Message</span>
+            Send Message
           </button>
         </form>
       </div>
