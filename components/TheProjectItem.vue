@@ -119,4 +119,10 @@
   transition-delay: 0.2s;
   display: inline-block;
 }
+@media only screen and (max-width: 600px) {
+  .view p {
+    line-height: normal;
+    margin-bottom: unset;
+  }
+}
 </style>

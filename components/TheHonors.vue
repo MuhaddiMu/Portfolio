@@ -49,7 +49,7 @@ export default {
   -webkit-border-radius: 3px;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 600px) {
   #honors ul li {
     width: 100%;
   }
