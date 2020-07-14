@@ -152,7 +152,6 @@
   font-size: 12px;
   font-style: normal;
   text-align: right;
-  line-height: 17px;
 }
 
 #side #nav ul li span {
@@ -164,32 +163,32 @@
 
 #side #nav ul .profile-nav span {
   height: 24px;
-  background: url('~assets/images/nav.png') top right no-repeat;
+  background: url('~assets/images/profile.svg') no-repeat;
 }
 
 #side #nav ul .skills-nav span {
   height: 24px;
-  background: url('~assets/images/skills-nav.png') right no-repeat;
+  background: url('~assets/images/skills.svg') no-repeat;
 }
 
 #side #nav ul .works-nav span {
   height: 24px;
-  background: url('~assets/images/nav.png') right -93px no-repeat;
+  background: url('~assets/images/works.svg') no-repeat;
 }
 
 #side #nav ul .blog-nav span {
   height: 24px;
-  background: url('~assets/images/nav.png') right -193px no-repeat;
+  background: url('~assets/images/blogs.svg') no-repeat;
 }
 
 #side #nav ul .contact-nav span {
   height: 24px;
-  background: url('~assets/images/nav.png') bottom right no-repeat;
+  background: url('~assets/images/contact.svg') no-repeat;
 }
 
 #side #nav ul .honors-nav span {
   height: 24px;
-  background: url('~assets/images/honors-nav.png') right no-repeat;
+  background: url('~assets/images/honors.svg') no-repeat;
 }
 
 @media only screen and (max-width: 880px) {
