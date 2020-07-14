@@ -49,25 +49,25 @@
   color: #fff;
   text-align: center;
   position: relative;
-  font-size: 145%;
-  padding: 4%;
+  font-size: 17px;
+  padding: 10px;
   background: rgba(0, 0, 0, 0.8);
-  margin: 8% 0 0 0;
+  margin: 20px 0 0 0;
 }
 .view p {
   display: none;
   font-style: italic;
-  font-size: 100%;
+  font-size: 12px;
   position: relative;
   color: #fff;
-  padding: 4% 5% 5%;
+  padding: 10px 20px 20px;
   text-align: center;
 }
 .view a.info {
   display: none;
   text-decoration: none;
   font-style: normal;
-  padding: 2% 6%;
+  padding: 7px 14px;
   background: #000;
   color: #fff;
   text-transform: uppercase;
