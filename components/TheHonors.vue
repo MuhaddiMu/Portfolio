@@ -9,10 +9,12 @@
         </p>
 
         <ul>
-          <TheProjectItem />
-          <TheProjectItem />
-          <TheProjectItem />
-          <TheProjectItem />
+          <TheProjectItem
+            project-cover-image="Microsoft-Hall-of-Fame.png"
+            project-caption="Acknowledged by Microsoft for reporting Security Vulnerabilities in one of Microsoft Acquisition (Minecraft)."
+            project-title="Acknowledged By Microsoft"
+            read-more="https://muhaddis.info"
+          />
         </ul>
       </div>
     </div>

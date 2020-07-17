@@ -1,25 +1,50 @@
 <template>
   <li>
-    <div class="view view-first">
+    <div class="animation-view animation">
       <img
-        src="https://www.muhaddis.info/wp-content/uploads/2017/09/Adobes-Hall-of-Fame-370x298.jpg"
-        alt="14th Acknowledgement From Adobe"
+        :src="require(`@/assets/images/Honors/${projectCoverImage}`)"
+        :alt="projectTitle"
       />
       <div class="mask"></div>
       <div class="content">
-        <h2>Hover Style #1</h2>
+        <h2>{{ projectTitle }}</h2>
         <p>
-          A wonderful serenity has taken possession of my entire soul, like
-          these sweet mornings of spring which I enjoy with my whole heart.
+          {{ projectCaption }}
         </p>
-        <a href="#" class="info btn">Read More</a>
+        <button v-if="readMore !== null" class="info btn">
+          <a :href="readMore">Read More</a>
+        </button>
       </div>
     </div>
   </li>
 </template>
 
+<script>
+export default {
+  props: {
+    projectCoverImage: {
+      type: [String],
+      required: true
+    },
+    projectCaption: {
+      type: [String],
+      required: true
+    },
+    projectTitle: {
+      type: [String],
+      required: true
+    },
+    readMore: {
+      type: [String],
+      required: false,
+      default: null
+    }
+  }
+}
+</script>
+
 <style scoped>
-.view {
+.animation-view {
   max-width: 100%;
   width: 100%;
   border-radius: 3px;
@@ -30,8 +55,8 @@
   text-align: center;
   background: #fff;
 }
-.view .mask,
-.view .content {
+.animation-view .mask,
+.animation-view .content {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -39,11 +64,11 @@
   top: 0;
   left: 0;
 }
-.view img {
+.animation-view img {
   display: block;
   position: relative;
 }
-.view h2 {
+.animation-view h2 {
   display: none;
   text-transform: uppercase;
   color: #fff;
@@ -54,76 +79,75 @@
   background: rgba(0, 0, 0, 0.8);
   margin: 20px 0 0 0;
 }
-.view p {
+.animation-view p {
   display: none;
   font-style: italic;
   font-size: 12px;
   position: relative;
   color: #fff;
-  padding: 10px 20px 20px;
+  line-height: normal;
+  padding: 5px 5px 5px;
   margin-bottom: unset;
   text-align: center;
 }
-.view a.info {
+.animation-view button.info {
   display: none;
-  text-decoration: none;
+  line-height: 24px;
+}
+.animation-view button.info a {
   font-style: normal;
-  background: #000;
-  color: #fff;
-  text-transform: uppercase;
 }
 
-.view-first img {
+.animation img {
   transition: all 0.2s linear;
 }
-.view-first .mask {
+.animation .mask {
   opacity: 0;
   background-color: rgba(34, 40, 49, 0.7);
   transition: all 0.4s ease-in-out;
 }
-.view-first h2 {
+.animation h2 {
   transform: translateY(-100px);
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-.view-first p {
+.animation p {
   transform: translateY(100px);
   opacity: 0;
   transition: all 0.2s linear;
 }
-.view-first a.info {
+.animation button.info {
   opacity: 0;
   transition: all 0.2s ease-in-out;
 }
-.view-first a.info:hover {
+.animation button.info:hover {
   background-color: #ff4343;
-  color: #fff;
 }
 
-.view-first:hover img {
+.animation:hover img {
   transform: scale(1.1);
 }
-.view-first:hover .mask {
+.animation:hover .mask {
   opacity: 1;
 }
-.view-first:hover h2,
-.view-first:hover p,
-.view-first:hover a.info {
+.animation:hover h2,
+.animation:hover p,
+.animation:hover button.info {
   opacity: 1;
   transform: translateY(0px);
 }
-.view-first:hover h2 {
+.animation:hover h2 {
   display: block;
 }
-.view-first:hover p {
+.animation:hover p {
   transition-delay: 0.1s;
   display: block;
 }
-.view-first:hover a.info {
+.animation:hover button.info {
   display: inline-block;
 }
 @media only screen and (max-width: 600px) {
-  .view p {
+  .animation-view p {
     line-height: normal;
     margin-bottom: unset;
   }
