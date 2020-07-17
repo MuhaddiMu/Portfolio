@@ -54,6 +54,7 @@ export default {
   position: relative;
   text-align: center;
   background: #fff;
+  margin-top: 5px;
 }
 .animation-view .mask,
 .animation-view .content {
