@@ -104,7 +104,7 @@ export default {
 }
 .animation .mask {
   opacity: 0;
-  background-color: rgba(34, 40, 49, 0.7);
+  background-color: rgba(18, 18, 18, 0.7);
   transition: all 0.4s ease-in-out;
 }
 .animation h2 {
