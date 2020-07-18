@@ -41,6 +41,12 @@
             project-url="https://qas-blogs.netlify.app"
             github-url="https://github.com/MuhaddiMu/QAS-Blogs"
           />
+          <TheProjectItem
+            project-cover-image="AS_Earning.png"
+            project-caption="Developed AS Earnings for a client using Laravel and MySQL. This is an online earning platform based on watching youtube videos. This website is currently functional only in Pakistan."
+            project-title="AS Earnings"
+            project-url="https://asearnings.com"
+          />
         </ul>
       </div>
     </div>
