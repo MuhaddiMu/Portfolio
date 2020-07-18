@@ -19,13 +19,15 @@
             project-cover-image="VuetiForm.png"
             project-caption="Interactive Vuetify Form Generator with Validation & Input Styling 🎉 Based on Vue"
             project-title="VuetiForm"
-            read-more="muhaddimu.github.io/vuetiform"
+            project-url="https://muhaddimu.github.io/vuetiform"
+            github-url="https://github.com/MuhaddiMu/VuetiForm"
           />
           <TheProjectItem
             project-cover-image="Idea-ReVue.png"
             project-caption="An open source Social Ideation platform to manage Ideas. Developed with Vue, Firebase & Vuetify"
             project-title="Idea Re-Vue"
-            read-more="https://muhaddimu.github.io/vuetiform"
+            project-url="http://idea-revue.netlify.com/"
+            github-url="https://github.com/MuhaddiMu/Idea-ReVue"
           />
           <TheProjectItem
             project-cover-image="IMS.png"
@@ -36,7 +38,8 @@
             project-cover-image="QAS-Blog.png"
             project-caption="An open source markdown based blog developed with Vue and Gridsome. SPA which is made up of Qasim Ali Shah blogs and columns from different resources ✨"
             project-title="QAS Blog"
-            read-more="https://qas-blogs.netlify.app"
+            project-url="https://qas-blogs.netlify.app"
+            github-url="https://github.com/MuhaddiMu/QAS-Blogs"
           />
         </ul>
       </div>
