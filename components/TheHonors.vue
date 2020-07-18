@@ -108,6 +108,36 @@
             project-title="Acknowledged By BugCrowd"
             read-more="https://muhaddis.info"
           />
+          <TheProjectItem
+            project-cover-image="Europa-HOF.png"
+            project-caption="Acknowledged by European Union for reporting security vulnerability in their web server configurations."
+            project-title="Acknowledged By European Union"
+            read-more="https://cert.europa.eu/cert/newsletter/en/latest_HallOfFame_.html"
+          />
+          <TheProjectItem
+            project-cover-image="DEV-HOF.png"
+            project-caption="Acknowledged by DEV for reporting broken Authentication in Dev.to"
+            project-title="Acknowledged By DEV"
+            read-more="https://dev.to/security"
+          />
+          <TheProjectItem
+            project-cover-image="NPO-HOF.png"
+            project-caption="Acknowledged by NPO for reporting security vulnerability that leads to DDoS attack in the website."
+            project-title="Acknowledged By NPO"
+            read-more="https://over.npo.nl/organisatie/responsible-disclosure"
+          />
+          <TheProjectItem
+            project-cover-image="Gratipay-HOF.png"
+            project-caption="Acknowledged by Gratipay for reporting broken Authentication in their website."
+            project-title="Acknowledged By Gratipay"
+            read-more="https://hackerone.com/gratipay/thanks/2017"
+          />
+          <TheProjectItem
+            project-cover-image="POSTNL-HOF.png"
+            project-caption="Acknowledged by POST NL for reporting Click jacking and UI redressing in their website."
+            project-title="Acknowledged By POST NL"
+            read-more="https://www.postnl.nl/responsible-disclosure/"
+          />
         </ul>
       </div>
     </div>
