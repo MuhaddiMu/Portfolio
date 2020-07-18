@@ -138,6 +138,12 @@
             project-title="Acknowledged By POST NL"
             read-more="https://www.postnl.nl/responsible-disclosure/"
           />
+          <TheProjectItem
+            project-cover-image="Udemy-Ethical-Hacking-Course.jpg"
+            project-caption="This certificate verifies that I successfully completed the course Practical Ethical Hacking as taught by Heath Adams on Udemy."
+            project-title="Certificate of Completion"
+            read-more="https://www.udemy.com/certificate/UC-354d05db-77b8-43c1-85ff-aa06ef319023/"
+          />
         </ul>
       </div>
     </div>
