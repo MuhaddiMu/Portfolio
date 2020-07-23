@@ -11,10 +11,10 @@
       </p>
 
       <div id="blog_posts">
-        <div v-for="blog in blogs" :key="blog.slug">
+        <div v-for="blog in blogs" :key="blog.dir">
           <div class="post">
             <h3 class="post_title">
-              <nuxt-link :to="'blog/' + blog.slug">{{ blog.Title }}</nuxt-link>
+              <nuxt-link :to="blog.dir">{{ blog.Title }}</nuxt-link>
             </h3>
 
             <div class="post_date">
@@ -352,14 +352,18 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const blogs = await $content('blogs', params.slug)
-      .only(['Title', 'slug', 'createdAt'])
-      .sortBy('createdAt', 'asc')
-      .fetch()
-
-    return {
-      blogs
+  async asyncData({ params, error, $content }) {
+    try {
+      const blogs = await $content('blog', { deep: true })
+        .only(['Title', 'slug', 'createdAt', 'dir'])
+        .sortBy('createdAt', 'asc')
+        .fetch()
+      return { blogs }
+    } catch (err) {
+      error({
+        statusCode: 404,
+        message: 'Page could not be found'
+      })
     }
   },
 

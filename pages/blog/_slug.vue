@@ -20,10 +20,19 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
-    const blog = await $content('blogs', params.slug).fetch()
-
-    return { blog }
+  async asyncData({ params, error, $content }) {
+    try {
+      const blogPath = `/blog/${params.slug}`
+      const [blog] = await $content('blog', { deep: true })
+        .where({ dir: blogPath })
+        .fetch()
+      return { blog }
+    } catch (err) {
+      error({
+        statusCode: 404,
+        message: 'Page could not be found'
+      })
+    }
   }
 }
 </script>

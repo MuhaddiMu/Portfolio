@@ -11,10 +11,10 @@
       </p>
 
       <div id="blog_posts">
-        <div v-for="blog in blogs" :key="blog.slug">
+        <div v-for="blog in blogs" :key="blog.dir">
           <div class="post">
             <h3 class="post_title">
-              <nuxt-link :to="'blog/' + blog.slug">{{ blog.Title }}</nuxt-link>
+              <nuxt-link :to="blog.dir">{{ blog.Title }}</nuxt-link>
             </h3>
 
             <div class="post_date">
