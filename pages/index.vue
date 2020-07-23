@@ -29,7 +29,7 @@ export default {
     ScrollToTop
   },
   async asyncData({ $content, params }) {
-    const blogs = await $content('blog', params.slug)
+    const blogs = await $content('blogs', params.slug)
       .only(['Title', 'slug', 'createdAt'])
       .sortBy('createdAt', 'asc')
       .fetch()

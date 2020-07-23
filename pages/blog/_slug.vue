@@ -11,6 +11,7 @@
             blog.path +
             '.md'
         "
+        target="_blank"
         >it on GitHub</a
       >. Thank you!
     </div>
@@ -20,7 +21,7 @@
 <script>
 export default {
   async asyncData({ $content, params }) {
-    const blog = await $content('blog', params.slug).fetch()
+    const blog = await $content('blogs', params.slug).fetch()
 
     return { blog }
   }
