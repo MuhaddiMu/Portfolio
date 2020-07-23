@@ -20,6 +20,7 @@
 
 <script>
 export default {
+  scrollToTop: true,
   async asyncData({ params, error, $content }) {
     try {
       const blogPath = `/blog/${params.slug}`
