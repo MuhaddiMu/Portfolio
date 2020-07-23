@@ -219,14 +219,14 @@ table {
 body {
   background-color: var(--bg) !important;
   color: var(--color) !important;
-  background: url('/Background.jpg') no-repeat center center fixed;
+  background: url('/Background.png') fixed;
   padding: 0;
   margin: 0;
   opacity: 0; /* For page fade in, open "~/plugins/jQuey.client.js" */
-  -webkit-background-size: cover;
+  /* -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
+  background-size: cover; */
 }
 
 a {
@@ -368,6 +368,12 @@ a {
 }
 
 .box .in {
+  max-width: 100%;
+  border-radius: 3px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
+  box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
   padding: 30px;
   margin-bottom: 20px;
   overflow: hidden;
@@ -587,5 +593,11 @@ embed {
   .honors ul {
     column-count: 1;
     column-gap: 0;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .panel {
+    padding-top: 180px;
   }
 }

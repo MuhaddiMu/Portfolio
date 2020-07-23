@@ -11,23 +11,16 @@
       </p>
 
       <div id="blog_posts">
-        <div
-          id="post_763"
-          class="post-763 post type-post status-publish format-standard hentry category-uncategorized"
-        >
-          <h3 class="post_title">
-            <a href="https://www.muhaddis.info/2019-annual-review/"
-              >2019 Annual Review: A Year of Change</a
-            >
-          </h3>
+        <div v-for="blog in blogs" :key="blog.slug">
+          <div class="post">
+            <h3 class="post_title">
+              <nuxt-link :to="'blog/' + blog.slug">{{ blog.Title }}</nuxt-link>
+            </h3>
 
-          <div class="post_date">
-            <h5 class="day">Monday 6, 2020</h5>
+            <div class="post_date">
+              <h5 class="day">{{ formatDate(blog.createdAt) }}</h5>
+            </div>
           </div>
-
-          <div class="post_content"></div>
-
-          <div class="none"></div>
         </div>
 
         <div
@@ -358,7 +351,21 @@
 </template>
 
 <script>
-export default {}
+export default {
+  props: {
+    blogs: {
+      type: [Array],
+      required: true
+    }
+  },
+
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    }
+  }
+}
 </script>
 
 <style scoped>

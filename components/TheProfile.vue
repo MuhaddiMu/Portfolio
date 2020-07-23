@@ -89,10 +89,4 @@ export default {}
   -webkit-box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
   box-shadow: 0px 1px 7px 0px rgba(00, 00, 00, 0.7);
 }
-
-@media only screen and (max-width: 880px) {
-  #profile.panel {
-    padding-top: 180px;
-  }
-}
 </style>

@@ -3,9 +3,9 @@
     <div id="side">
       <div id="logo">
         <h1>
-          <a href="https://www.muhaddis.info/"
+          <nuxt-link to="/"
             ><img src="@/assets/images/logo.png" alt="Muhaddis"
-          /></a>
+          /></nuxt-link>
         </h1>
         <client-only>
           <h4 class="sub">
