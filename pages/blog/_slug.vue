@@ -1,7 +1,18 @@
 <template>
   <div class="panel box">
     <div class="in">
+      <h2>{{ blog.Title }}</h2>
+      <p>
+        <v-img
+          v-if="blog.Featured_Image"
+          :src="blog.Featured_Image"
+          :alt="blog.Title"
+        ></v-img>
+      </p>
+
       <nuxt-content :document="blog" />
+
+      <div class="line" />
 
       If you enjoyed this article, please tell a friend about it! Share it on
       Twitter. If you spot a typo, I’d appreciate if you can correct
@@ -19,7 +30,11 @@
 </template>
 
 <script>
+import VImg from '~/components/VImg'
 export default {
+  components: {
+    VImg
+  },
   scrollToTop: true,
   async asyncData({ params, error, $content }) {
     try {
@@ -37,3 +52,12 @@ export default {
   }
 }
 </script>
+
+<style>
+ul {
+  display: block;
+  list-style-type: disc;
+  padding-left: 40px;
+  margin-bottom: 20px;
+}
+</style>
