@@ -5,11 +5,10 @@
       <p>
         <v-img
           v-if="blog.Featured_Image"
-          :src="blog.Featured_Image"
+          :src="blog.dir + '/images/' + blog.Featured_Image"
           :alt="blog.Title"
         ></v-img>
       </p>
-
       <nuxt-content :document="blog" />
 
       <div class="line" />
@@ -30,11 +29,7 @@
 </template>
 
 <script>
-import VImg from '~/components/VImg'
 export default {
-  components: {
-    VImg
-  },
   scrollToTop: true,
   async asyncData({ params, error, $content }) {
     try {
@@ -65,5 +60,22 @@ export default {
 }
 .nuxt-content a:hover {
   color: #ff4343;
+}
+.filename {
+  position: absolute;
+  right: 0;
+  --text-opacity: 1;
+  color: #718096;
+  color: rgba(113, 128, 150, var(--text-opacity));
+  font-weight: 300;
+  z-index: 10;
+  margin-right: 0.5rem;
+  margin-top: 0.25rem;
+  font-size: 0.875rem;
+}
+.nuxt-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 </style>

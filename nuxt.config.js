@@ -83,5 +83,13 @@ export default {
   },
   server: {
     host: '0.0.0.0'
-  }
+  },
+  content: {
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-synthwave84.css'
+      }
+    }
+  },
+  components: true
 }

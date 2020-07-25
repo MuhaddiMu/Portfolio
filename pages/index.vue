@@ -32,7 +32,7 @@ export default {
     try {
       const blogs = await $content('blog', { deep: true })
         .only(['Title', 'slug', 'createdAt', 'dir'])
-        .sortBy('createdAt', 'asc')
+        .sortBy('createdAt', 'desc')
         .fetch()
       return { blogs }
     } catch (err) {

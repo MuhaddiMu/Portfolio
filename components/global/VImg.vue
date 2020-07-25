@@ -17,8 +17,7 @@ export default {
   methods: {
     imgSrc() {
       try {
-        const { blog } = this.$parent
-        return require(`~/content${blog.dir}/images/${this.src}`)
+        return require(`~/content${this.src}`)
       } catch (error) {
         return null
       }
