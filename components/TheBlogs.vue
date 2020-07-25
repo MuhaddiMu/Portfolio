@@ -80,12 +80,12 @@ export default {
   margin-bottom: 10px;
 }
 
-.post .post_title a {
+a {
   font-style: normal;
   transition: 250ms;
 }
 
-.post .post_title a:hover {
+a:hover {
   color: #ff4343;
 }
 
