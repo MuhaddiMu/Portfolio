@@ -28,22 +28,19 @@
       </div>
     </div>
 
-    <div id="vcard" class="box">
+    <!-- <div id="notification-card" class="box">
       <div class="in">
         <div class="three-fourths">
-          <h4>Grab a Quick Copy of my vCard</h4>
+          <h4>Copy</h4>
         </div>
 
         <div class="one-fourth column-last">
-          <a
-            href="https://docs.google.com/uc?authuser=0&id=0B-KqdveSClD-T1BTMUNCdVdKYmM&export=download"
-            class="btn"
-          >
+          <a href="" class="btn">
             Download
           </a>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -60,25 +57,25 @@ export default {}
   margin-bottom: 0;
 }
 
-#vcard .in {
+/* #notification-card .in {
   padding-bottom: 0;
 }
 
-#vcard .in > div {
+#notification-card .in > div {
   margin-bottom: 0;
 }
 
-#vcard .btn {
+#notification-card .btn {
   width: 72%;
   text-align: center;
   padding-left: 14%;
   padding-right: 14%;
 }
 
-#vcard h4 {
+#notification-card h4 {
   line-height: 36px;
   margin-bottom: 30px;
-}
+} */
 
 #photo,
 .box .in {
