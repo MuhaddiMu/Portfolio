@@ -1,6 +1,6 @@
 ---
 Title: Which Programming Languages Should You Learn to Become A Hacker?
-Description: Learning how to use @nuxt/content to create a blog
+Description: Which programming language should you learn for Hacking? Since programming is essential for hacking because a hacker is someone who breaks security and apps.
 Featured_Image: Featured.jpg
 ---
 

@@ -7,8 +7,13 @@ if (process.client) {
 
     var body = jQuery('body')
     var screenWidth = body.width()
+    var baseURL = window.location.protocol + '//' + window.location.host + '/'
 
     body.delay(100).animate({ opacity: 1 }, 100, 'easeInOutCirc')
+
+    jQuery('#side #nav ul li a').click(function() {
+      window.location.href = baseURL + this.hash
+    })
 
     if (screenWidth > 880) {
       jQuery('#control')
@@ -44,9 +49,7 @@ if (process.client) {
 
     /* CSS */
 
-    if (body.hasClass('home')) {
-      nav.find('li:first').addClass('active')
-    }
+    nav.find('li:first').addClass('active')
 
     var topMenu = jQuery('#nav ul'),
       topMenuHeight = topMenu.outerHeight() + 15,

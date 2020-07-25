@@ -30,7 +30,7 @@
       <nav id="nav">
         <!-- Screen Size > 880px -->
         <ul class="regular">
-          <li class="profile-nav active">
+          <li class="profile-nav">
             <a v-smooth-scroll href="#profile">Profile<span></span></a>
           </li>
           <li class="skills-nav">

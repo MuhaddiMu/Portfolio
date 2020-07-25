@@ -54,10 +54,16 @@ export default {
 </script>
 
 <style>
-ul {
+.nuxt-content ul {
   display: block;
   list-style-type: disc;
   padding-left: 40px;
   margin-bottom: 20px;
+}
+.nuxt-content a {
+  transition: 250ms;
+}
+.nuxt-content a:hover {
+  color: #ff4343;
 }
 </style>
