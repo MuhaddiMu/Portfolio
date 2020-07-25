@@ -55,6 +55,12 @@ export default {
   padding-left: 40px;
   margin-bottom: 20px;
 }
+.nuxt-content > ol {
+  display: block;
+  list-style-type: decimal;
+  margin-bottom: 20px;
+  padding-left: 40px;
+}
 .nuxt-content a {
   transition: 250ms;
 }

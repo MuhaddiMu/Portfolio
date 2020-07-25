@@ -47,6 +47,6 @@ buildDir: '.nuxt/authenticated'
 
 By changing the script settings we are now able to run both of the instances with single npm command `npm run dev`
 
-<p><v-img src="/blog/how-to-use-multiple-nuxtjs-applications-on-the-frontend/images/Scripts.png" alt="Scripts"></v-img></p>
+<v-img src="/blog/how-to-use-multiple-nuxtjs-applications-on-the-frontend/images/Scripts.png" alt="Scripts"></v-img>
 
 In the authenticated folder, we still have some files and folders that we don't need. Feel free to delete them. Before merging and removing the code make sure both package.json uses the same dependencies.

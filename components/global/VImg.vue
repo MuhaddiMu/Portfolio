@@ -1,5 +1,7 @@
 <template>
-  <img :src="imgSrc()" :alt="alt" />
+  <p>
+    <img :src="imgSrc()" :alt="alt" />
+  </p>
 </template>
 
 <script>
