@@ -18,7 +18,10 @@
             </h3>
 
             <div class="post_date">
-              <h5 class="day">{{ formatDate(blog.createdAt) }}</h5>
+              <h5 class="day">
+                {{ formatDate(blog.createdAt) }} ·
+                {{ (blog.readingTime / (1000 * 60)).toFixed() }} min read
+              </h5>
             </div>
           </div>
         </div>

@@ -24,7 +24,7 @@ At the start of 2019, I set some challenges for me to accomplish in the year.
 
 ## 365 Days of Code
 
-<v-img src="/blog/2019-annual-review/images/Facebook-Post.png"></v-img>
+<v-img src="/blog/2019-annual-review/images/Facebook-Post.png" alt="Facebook Post"></v-img>
 
 From the first January, I was working on freelance and side projects. Every day, I tried my best to get my hands on modern technologies/frameworks. I commit everything to my GitHub just to keep my progress graph updated. Sometimes, it's just one line of code and sometimes it's a complete learning-based application.
 
@@ -72,17 +72,17 @@ This is something I developed my interest this year. I have used[ Goodreads](htt
 
 365 days of code not only help me enhance my skill set but it also helped me get job offers from the different organization around the world. Luckily I secured my first job as a Security Software Engineer at Foretheta.
 
-<v-img src="/blog/2019-annual-review/images/Software-Engineer-Job-Offer.png"></v-img>
+<v-img src="/blog/2019-annual-review/images/Software-Engineer-Job-Offer.png" alt="Software Engineer Job Offer"></v-img>
 
-<v-img src="/blog/2019-annual-review/images/Vue-Job-Offer.png"></v-img>
+<v-img src="/blog/2019-annual-review/images/Vue-Job-Offer.png" alt="VueJS Job Offer"></v-img>
 
-<v-img src="/blog/2019-annual-review/images/Mentors-Without-Borders.png"></v-img>
+<v-img src="/blog/2019-annual-review/images/Mentors-Without-Borders.png" alt="Mentors Without Borders Email"></v-img>
 
 Most of my work on a day to day basis comprised of DevSecOps, system administrator, secure software engineering and defending Foretheta team from very bad peoples on the internet.
 
 ## Non-Work
 
-<v-img src="/blog/2019-annual-review/images/GitHub-Graph.png"></v-img>
+<v-img src="/blog/2019-annual-review/images/GitHub-Graph.png" alt="GitHub Graph"></v-img>
 
 **Fatal Road Accident:**  
 If you notice my[ progress graph of GitHub in 2019](https://github.com/MuhaddiMu?tab=overview&from=2019-12-01&to=2019-12-31), you'll see I took two breaks. I took the first break due to Itikaf. I don't have intentions for the second break however life happened.
@@ -98,7 +98,7 @@ Edwardes STEM was a computer club which provided a platform to multidisciplinary
 **Ethical Hacking & Coding 101 Workshop:**  
 I am very glad to be a trainer of STOORE. They conducted a workshop on Ethical Hacking and Coding 101 at IM Sciences University Peshawar. The purpose of the workshop is to acquaint Cyber Security with youth and let them find their passion by introducing them to different fields. Target gathering of students was from sixth to twelve grade.
 
-<v-img src="/blog/2019-annual-review/images/Stoore-Training.png"></v-img>
+<v-img src="/blog/2019-annual-review/images/Stoore-Training.png" alt="Stoore Training"></v-img>
 
 **No Social Media:**  
 This year, I have deactivated my [Instagram](http://instagram.com/MuhaddiMu) account and focus more on the learning side. In this year, I barely posted on [Facebook](https://facebook.com/MuhaddisMu) and [Twitter](https://twitter.com/MuhaddisMu). In 2020 I'm aiming to be more active in the community as HackerOne says, "Together, we hit harder".

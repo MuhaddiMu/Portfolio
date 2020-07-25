@@ -1,7 +1,13 @@
 <template>
-  <div class="panel box">
+  <div class="panel box blog_post">
     <div class="in">
       <h2>{{ blog.Title }}</h2>
+      <div class="post_date">
+        <h5 class="day">
+          {{ formatDate(blog.createdAt) }} ·
+          {{ (blog.readingTime / (1000 * 60)).toFixed() }} min read
+        </h5>
+      </div>
       <p>
         <v-img
           v-if="blog.Featured_Image"
@@ -44,6 +50,12 @@ export default {
         message: 'Page could not be found'
       })
     }
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    }
   }
 }
 </script>
@@ -83,5 +95,30 @@ export default {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.blog_post h2 {
+  margin-bottom: auto;
+}
+
+.blog_post .post_date h5 {
+  color: #777 !important;
+  margin-bottom: 25px;
+}
+
+p code,
+li code {
+  padding: 2px 5px 2px 5px;
+  border: solid 1px #2a223a;
+  border-radius: 4px;
+  color: #71f1b9;
+  background-color: #2a223a;
+  margin: 0 2px 0 2px;
+  overflow: auto;
+  white-space: pre;
+}
+
+pre {
+  border-radius: 4px;
 }
 </style>
