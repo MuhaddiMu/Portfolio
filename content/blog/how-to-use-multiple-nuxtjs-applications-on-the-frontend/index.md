@@ -28,7 +28,7 @@ buildDir: '.nuxt/authenticated'
 `srcDirdefine` the source directory of Nuxt.js application.  
 `buildDirwill` define the dist directory for our Nuxt.js application.
 
-- Now install concurrently npm package in the main folder to run scripts parallel `npm i concurrently --save-dev`
+- Now install concurrently npm package in the main folder to run scripts parallel `npm i concurrently --save-dev npm i concurrently --save-dev npm i concurrently --save-dev npm i concurrently --save-dev npm i concurrently --save-dev npm i concurrently --save-dev npm i concurrently --save-dev npm i concurrently --save-dev npm i concurrently --save-dev npm i concurrently --save-dev npm i concurrently --save-dev`
 - Change `package.json` in the main folder.
 
 ```json[package.json]
