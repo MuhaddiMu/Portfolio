@@ -1,7 +1,7 @@
 <template>
-  <div class="panel box blog_post">
+  <div class="panel box">
     <div class="in">
-      <h2>{{ blog.Title }}</h2>
+      <h2 class="post_title">{{ blog.Title }}</h2>
       <div class="post_date">
         <h5 class="day">
           {{ formatDate(blog.createdAt) }} ·
@@ -100,11 +100,11 @@ export default {
   margin-right: auto;
 }
 
-.blog_post h2 {
+.post_title {
   margin-bottom: auto;
 }
 
-.blog_post .post_date h5 {
+.post_date h5 {
   color: #777 !important;
   margin-bottom: 25px;
 }
@@ -116,7 +116,6 @@ li code {
   border-radius: 4px;
   color: #71f1b9;
   background-color: #2a223a;
-  margin: 0 2px 0 2px;
   overflow: auto;
   white-space: pre;
 }
