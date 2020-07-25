@@ -22,6 +22,7 @@
       If you enjoyed this article, please tell a friend about it! Share it on
       Twitter. If you spot a typo, I’d appreciate if you can correct
       <a
+        class="edit_url"
         :href="
           'https://github.com/MuhaddiMu/Portfolio/tree/master/content/' +
             blog.path +
@@ -73,10 +74,12 @@ export default {
   margin-bottom: 20px;
   padding-left: 40px;
 }
-.nuxt-content a {
+.nuxt-content a,
+.edit_url {
   transition: 250ms;
 }
-.nuxt-content a:hover {
+.nuxt-content a:hover,
+.edit_url:hover {
   color: #ff4343;
 }
 .filename {
