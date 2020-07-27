@@ -20,7 +20,17 @@
       <div class="line" />
 
       If you enjoyed this article, please tell a friend about it! Share it on
-      Twitter. If you spot a typo, I’d appreciate if you can correct
+      <a
+        :href="
+          'https://twitter.com/intent/tweet?text=' +
+            blog.Title +
+            '%20by%20@MuhaddiMu%20%F0%9F%91%87%20%0Ahttps://www.muhaddis.info' +
+            blog.dir +
+            '&amp;related=MuhaddiMu'
+        "
+        target="_blank"
+        >Twitter</a
+      >. If you spot a typo, I’d appreciate if you can correct
       <a
         class="edit_url"
         :href="
