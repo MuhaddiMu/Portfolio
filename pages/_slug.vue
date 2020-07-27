@@ -40,8 +40,8 @@ export default {
   scrollToTop: true,
   async asyncData({ params, error, $content }) {
     try {
-      const blogPath = `/blog/${params.slug}`
-      const [blog] = await $content('blog', { deep: true })
+      const blogPath = `/${params.slug}`
+      const [blog] = await $content({ deep: true })
         .where({ dir: blogPath })
         .fetch()
       return { blog }
@@ -117,7 +117,6 @@ export default {
 .filename {
   position: absolute;
   right: 0;
-  --text-opacity: 1;
   color: #718096;
   color: rgba(113, 128, 150, var(--text-opacity));
   font-weight: 300;
