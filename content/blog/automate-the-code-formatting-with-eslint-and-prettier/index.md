@@ -17,7 +17,9 @@ ESLint will show colourful squigglies in IDE and Prettier will formate our code 
 
 ## Install Dependencies
 
-`npm i -D eslint prettier prettier-eslint eslint-config-prettier eslint-plugin-prettier`
+```sh
+npm i -D eslint prettier prettier-eslint eslint-config-prettier eslint-plugin-prettier
+```
 
 ## Setup the Config files
 

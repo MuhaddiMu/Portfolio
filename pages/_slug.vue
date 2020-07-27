@@ -57,6 +57,38 @@ export default {
       const options = { year: 'numeric', month: 'long', day: 'numeric' }
       return new Date(date).toLocaleDateString('en', options)
     }
+  },
+  head() {
+    return {
+      title: this.blog.Title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.blog.Description
+        },
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: this.blog.Title
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: this.blog.Description
+        },
+        {
+          hid: 'twitter:title',
+          name: 'twitter:title',
+          content: this.blog.Title
+        },
+        {
+          hid: 'twitter:description',
+          name: 'twitter:description',
+          content: this.blog.Description
+        }
+      ]
+    }
   }
 }
 </script>

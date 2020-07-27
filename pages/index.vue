@@ -41,6 +41,12 @@ export default {
         message: 'Page could not be found'
       })
     }
+  },
+  head() {
+    return {
+      titleTemplate: '',
+      title: 'Muhaddis – Security Engineer'
+    }
   }
 }
 </script>

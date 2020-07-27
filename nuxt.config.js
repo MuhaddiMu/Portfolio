@@ -4,14 +4,27 @@ export default {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    titleTemplate: '%s | Muhaddis',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content:
+          'Muhaddis is a Security Engineer and Web Developer who likes to play with all kind of technologies and develop scalable and secure applications. He is the Security Engineer at Foretheta.'
+      },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content:
+          'Muhaddis is a Security Engineer and Web Developer who likes to play with all kind of technologies and develop scalable and secure applications. He is the Security Engineer at Foretheta.'
+      },
+      {
+        hid: 'twitter:description',
+        name: 'twitter:description',
+        content:
+          'Muhaddis is a Security Engineer and Web Developer who likes to play with all kind of technologies and develop scalable and secure applications. He is the Security Engineer at Foretheta.'
       }
     ],
     noscript: [

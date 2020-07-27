@@ -21,6 +21,11 @@ export default {
         message: 'Page could not be found'
       })
     }
+  },
+  head() {
+    return {
+      title: 'Blogs'
+    }
   }
 }
 </script>
