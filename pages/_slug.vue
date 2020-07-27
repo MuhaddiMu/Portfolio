@@ -24,7 +24,7 @@
       <a
         class="edit_url"
         :href="
-          'https://github.com/MuhaddiMu/Portfolio/tree/master/content/' +
+          'https://github.com/MuhaddiMu/Portfolio/tree/master/content' +
             blog.path +
             '.md'
         "
