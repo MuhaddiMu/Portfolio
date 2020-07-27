@@ -19,8 +19,8 @@ At the start of 2019, I set some challenges for me to accomplish in the year.
 
 1. 365 Days of Code (Accomplished)
 2. [Reading 20 Books](https://www.goodreads.com/user_challenges/16738736) (Accomplished)
-3. Write a [blog post](/blog/why-I-started-blogging) every week (Failed)
-4. Start a[ weekly newsletter](https://www.muhaddis.info/newsletter/) (Accomplished)
+3. Write a [blog post](/why-I-started-blogging) every week (Failed)
+4. Start a[ weekly newsletter](/newsletter) (Accomplished)
 
 ## 365 Days of Code
 

@@ -34,7 +34,7 @@
       </div>
 
       <div class="three-fifths column-last">
-        <form id="contact_form" @submit="SubmitContactForm">
+        <form id="contact_form" netlify @submit="SubmitContactForm">
           <p>
             <label
               v-if="
