@@ -72,7 +72,8 @@ export default {
   plugins: [
     { src: '~/plugins/vue-typer', ssr: false },
     { src: '~/plugins/smooth-scroll', ssr: false },
-    { src: '~/plugins/jQuery.client.js', ssr: false }
+    { src: '~/plugins/jQuery.client.js', ssr: false },
+    { src: '~plugins/mailer-lite.js', mode: 'client' }
   ],
   /*
    ** Nuxt.js dev-modules
