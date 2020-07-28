@@ -21,6 +21,7 @@
 
       If you enjoyed this article, please tell a friend about it! Share it on
       <a
+        class="url_hover"
         :href="
           'https://twitter.com/intent/tweet?text=' +
             blog.Title +
@@ -32,7 +33,7 @@
         >Twitter</a
       >. If you spot a typo, I’d appreciate if you can correct
       <a
-        class="edit_url"
+        class="url_hover"
         :href="
           'https://github.com/MuhaddiMu/Portfolio/tree/master/content' +
             blog.path +
@@ -117,11 +118,11 @@ export default {
   padding-left: 40px;
 }
 .nuxt-content a,
-.edit_url {
+.url_hover {
   transition: 250ms;
 }
 .nuxt-content a:hover,
-.edit_url:hover {
+.url_hover:hover {
   color: #ff4343;
 }
 .filename {
