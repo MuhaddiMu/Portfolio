@@ -574,6 +574,9 @@ embed {
   -webkit-border-radius: 3px;
 }
 
+.nuxt-progress {
+  box-shadow: 0 0 5px #ff4da6, 0 0 15px #ff4da6, 0 0 25px #ff4da6;
+}
 /* Responsiveness */
 
 @media only screen and (max-width: 540px) {
