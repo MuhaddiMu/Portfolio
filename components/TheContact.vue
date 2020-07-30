@@ -33,8 +33,12 @@
         </ul>
       </div>
 
-      <div class="three-fifths column-last">
-        <form id="contact_form" @submit="SubmitContactForm">
+      <div class="three-fifths column-last kwes-form">
+        <form
+          id="contact_form"
+          action="https://kwes.io/api/foreign/forms/x7zBOrs1rKxHwv8ftXz7"
+          @submit="SubmitContactForm"
+        >
           <p>
             <label
               v-if="
@@ -51,6 +55,7 @@
               id="name"
               v-model="InputName.Value"
               name="Name"
+              rules="required|max:255"
               autocomplete="off"
               type="text"
               :class="{
@@ -78,6 +83,7 @@
               id="email"
               v-model="InputEmail.Value"
               autocomplete="off"
+              rules="required|max:255"
               name="Email"
               type="text"
               :class="{
@@ -105,6 +111,7 @@
               id="message"
               v-model="InputMessage.Value"
               name="Message"
+              rules="required"
               autocomplete="off"
               rows="8"
               cols="20"
