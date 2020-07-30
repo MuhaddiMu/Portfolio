@@ -45,9 +45,6 @@ export default {
   scrollToTop: false,
   head() {
     return {
-      script: {
-        src: 'https://kwes.io/js/kwes.js'
-      },
       titleTemplate: '',
       title: 'Muhaddis – Security Engineer'
     }
