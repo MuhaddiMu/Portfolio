@@ -1,5 +1,5 @@
 <template>
-  <div id="blog" class="panel box">
+  <div id="newsletter" class="panel box">
     <div class="in">
       <h2>Newsletter</h2>
       <div

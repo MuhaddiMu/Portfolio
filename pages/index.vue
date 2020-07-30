@@ -42,7 +42,6 @@ export default {
       })
     }
   },
-  scrollToTop: false,
   head() {
     return {
       titleTemplate: '',
