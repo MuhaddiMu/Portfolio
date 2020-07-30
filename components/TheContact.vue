@@ -41,7 +41,7 @@
           @submit="SubmitContactForm"
         >
           <p>
-            <input name="bot-field" hidden />
+            <input name="bot-field" type="hidden" />
             <label
               v-if="
                 !InputName.Toggle &&
