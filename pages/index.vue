@@ -43,6 +43,13 @@ export default {
     }
   },
   scrollToTop: false,
+  mounted() {
+    const kwesScript = document.createElement('script')
+
+    kwesScript.setAttribute('src', 'https://kwes.io/js/kwes.js')
+
+    document.head.appendChild(kwesScript)
+  },
   head() {
     return {
       titleTemplate: '',

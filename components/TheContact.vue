@@ -56,7 +56,6 @@
               id="name"
               v-model="InputName.Value"
               name="Name"
-              rules="required|max:255"
               autocomplete="off"
               type="text"
               :class="{
@@ -84,7 +83,6 @@
               id="email"
               v-model="InputEmail.Value"
               autocomplete="off"
-              rules="required|max:255"
               name="Email"
               type="text"
               :class="{
@@ -112,7 +110,6 @@
               id="message"
               v-model="InputMessage.Value"
               name="Message"
-              rules="required"
               autocomplete="off"
               rows="8"
               cols="20"
@@ -181,8 +178,6 @@ export default {
       }
     },
     SubmitContactForm(e) {
-      e.preventDefault()
-
       const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ //eslint-disable-line
 
       if (this.InputName.Value === '' || this.InputName.Value === null) {

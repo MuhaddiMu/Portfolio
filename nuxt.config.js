@@ -55,9 +55,6 @@ export default {
       },
       {
         src: 'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js'
-      },
-      {
-        src: 'https://kwes.io/js/kwes.js'
       }
     ]
   },
