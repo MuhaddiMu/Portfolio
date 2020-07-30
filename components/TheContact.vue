@@ -207,7 +207,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 #contact_form {
   width: 100%;
   min-height: 200px;
