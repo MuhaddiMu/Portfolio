@@ -34,8 +34,14 @@
       </div>
 
       <div class="three-fifths column-last">
-        <form id="contact_form" netlify @submit="SubmitContactForm">
+        <form
+          id="contact_form"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          @submit="SubmitContactForm"
+        >
           <p>
+            <input name="bot-field" hidden />
             <label
               v-if="
                 !InputName.Toggle &&
@@ -50,6 +56,7 @@
             <input
               id="name"
               v-model="InputName.Value"
+              name="Name"
               autocomplete="off"
               type="text"
               :class="{
@@ -77,6 +84,7 @@
               id="email"
               v-model="InputEmail.Value"
               autocomplete="off"
+              name="Email"
               type="text"
               :class="{
                 Blurred: InputEmail.hasData,
@@ -102,6 +110,7 @@
             <textarea
               id="message"
               v-model="InputMessage.Value"
+              name="Message"
               autocomplete="off"
               rows="8"
               cols="20"

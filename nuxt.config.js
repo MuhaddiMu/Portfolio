@@ -86,7 +86,8 @@ export default {
       {
         id: 'UA-93991901-2'
       }
-    ]
+    ],
+    '@aceforth/nuxt-optimized-images'
   ],
   /*
    ** Nuxt.js modules
@@ -120,5 +121,8 @@ export default {
         document.readingTime = time
       }
     }
+  },
+  optimizedImages: {
+    optimizeImages: true
   }
 }
