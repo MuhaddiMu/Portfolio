@@ -1,12 +1,4 @@
-[![Netlify Status](https://api.netlify.com/api/v1/badges/9433955c-3c75-4f3e-9696-9d9dbb41ce3d/deploy-status)](https://app.netlify.com/sites/muhaddis/deploys)
-
-[![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](https://github.com/MuhaddiMu/Portfolio/tree/master/content)
-
-[![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/MuhaddiMu/Portfolio/issues/new)
-
-[![GitHub issues](https://img.shields.io/github/issues/MuhaddiMu/Portfolio.svg)](https://GitHub.com/MuhaddiMu/Portfolio/issues/)
-
-[![GitHub pull-requests](https://img.shields.io/github/issues-pr/MuhaddiMu/Portfolio.svg)](https://github.com/MuhaddiMu/Portfolio/pulls)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9433955c-3c75-4f3e-9696-9d9dbb41ce3d/deploy-status)](https://app.netlify.com/sites/muhaddis/deploys) [![made-with-Markdown](https://img.shields.io/badge/Made%20with-Markdown-1f425f.svg)](https://github.com/MuhaddiMu/Portfolio/tree/master/content) [![Ask Me Anything !](https://img.shields.io/badge/Ask%20me-anything-1abc9c.svg)](https://github.com/MuhaddiMu/Portfolio/issues/new) [![GitHub issues](https://img.shields.io/github/issues/MuhaddiMu/Portfolio.svg)](https://GitHub.com/MuhaddiMu/Portfolio/issues/) [![GitHub pull-requests](https://img.shields.io/github/issues-pr/MuhaddiMu/Portfolio.svg)](https://github.com/MuhaddiMu/Portfolio/pulls)
 
 <a href="https://muhaddis.info"><p align="center"><img width="100px" src="https://raw.githubusercontent.com/MuhaddiMu/Portfolio/master/static/Logo.png"></p></a>
 
