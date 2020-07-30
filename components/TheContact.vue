@@ -34,14 +34,8 @@
       </div>
 
       <div class="three-fifths column-last">
-        <form
-          id="contact_form"
-          data-netlify="true"
-          netlify-honeypot="bot-field"
-          @submit="SubmitContactForm"
-        >
+        <form id="contact_form" @submit="SubmitContactForm">
           <p>
-            <input name="bot-field" type="hidden" />
             <label
               v-if="
                 !InputName.Toggle &&
@@ -207,7 +201,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 #contact_form {
   width: 100%;
   min-height: 200px;
