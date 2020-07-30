@@ -33,13 +33,18 @@
         </ul>
       </div>
 
-      <div class="three-fifths column-last kwes-form">
+      <div class="three-fifths column-last">
         <form
           id="contact_form"
+          ref="Form"
           method="POST"
-          action="https://kwes.io/api/foreign/forms/x7zBOrs1rKxHwv8ftXz7"
-          @submit="SubmitContactForm"
+          action="https://formsubmit.co/6f1890b8b66e6846d0795ba23505972e"
+          @submit.prevent="ValidateForm()"
         >
+          <input type="hidden" name="_next" value="https://muhaddis.info" />
+          <input type="text" name="_honey" style="display:none" />
+          <input type="hidden" name="_captcha" value="false" />
+
           <p>
             <label
               v-if="
@@ -122,7 +127,7 @@
             ></textarea>
           </p>
 
-          <button id="submit_button" type="submit" class="btn">
+          <button id="submit_button" class="btn" @click="ValidateForm()">
             Send Message
           </button>
         </form>
@@ -131,14 +136,13 @@
   </div>
 </template>
 
-<script>
+<script scoped>
 export default {
   data() {
     return {
       InputName: { Value: '', Toggle: false, hasData: false, Error: false },
       InputEmail: { Value: '', Toggle: false, hasData: false, Error: false },
-      InputMessage: { Value: '', Toggle: false, hasData: false, Error: false },
-      isFormValid: false
+      InputMessage: { Value: '', Toggle: false, hasData: false, Error: false }
     }
   },
   methods: {
@@ -177,34 +181,38 @@ export default {
         }
       }
     },
-    SubmitContactForm(e) {
+    ValidateForm() {
       const emailRegex = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/ //eslint-disable-line
 
       if (this.InputName.Value === '' || this.InputName.Value === null) {
         this.InputName.Error = true
-      } else {
-        this.isFormValid = true
       }
+
       if (
         this.InputEmail.Value === '' ||
         this.InputEmail.Value === null ||
         emailRegex.test(this.InputEmail.Value) === false
       ) {
         this.InputEmail.Error = true
-      } else {
-        this.isFormValid = true
       }
+
       if (this.InputMessage.Value === '' || this.InputMessage.Value === null) {
         this.InputMessage.Error = true
-      } else {
-        this.isFormValid = true
+      }
+
+      if (
+        !this.InputMessage.Error &&
+        !this.InputEmail.Error &&
+        !this.InputName.Error
+      ) {
+        this.$refs.Form.submit()
       }
     }
   }
 }
 </script>
 
-<style scoped>
+<style>
 #contact_form {
   width: 100%;
   min-height: 200px;
@@ -321,5 +329,15 @@ textarea:focus {
 
 .Blurred {
   color: #323232 !important;
+}
+
+button[disabled='disabled'],
+button:disabled {
+  cursor: not-allowed;
+}
+
+button[disabled='disabled']:hover,
+button:disabled:hover {
+  background-color: #323439;
 }
 </style>
