@@ -36,6 +36,7 @@
       <div class="three-fifths column-last kwes-form">
         <form
           id="contact_form"
+          method="POST"
           action="https://kwes.io/api/foreign/forms/x7zBOrs1rKxHwv8ftXz7"
           @submit="SubmitContactForm"
         >
