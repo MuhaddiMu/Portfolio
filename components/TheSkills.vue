@@ -1,7 +1,7 @@
 <template>
   <div id="skills" class="panel box">
     <div class="in">
-      <h2>Skills / Expertise</h2>
+      <h2>Skills</h2>
 
       <div class="clearfix"></div>
 
