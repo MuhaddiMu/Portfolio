@@ -16,97 +16,96 @@
             project-cover-image="Microsoft-HOF.png"
             project-caption="Acknowledged by Microsoft for reporting Security vulnerabilities in one of Microsoft Acquisition (Minecraft)."
             project-title="Acknowledged By Microsoft"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-microsoft-1m7n"
           />
           <TheProjectItem
             project-cover-image="Sony-HOF.jpg"
             project-caption="Acknowledged by Sony for reporting multiple Security vulnerabilities in Sony web applications."
             project-title="Acknowledged By Sony"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-sony-9ff"
           />
           <TheProjectItem
             project-cover-image="Google-HOF.jpg"
             project-caption="Acknowledged by Google for finding and reporting Security vulnerabilities in Google services."
             project-title="Acknowledged By Google"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-google-1dhg"
           />
           <TheProjectItem
             project-cover-image="Adobe-HOF.jpg"
             project-caption="Acknowledged by Adobe for reporting Security vulnerability in their web mail server."
             project-title="Acknowledged By Adobe"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-adobe-38h8"
           />
           <TheProjectItem
             project-cover-image="Alien-Vault.jpg"
             project-caption="Acknowledged by Alien Vault for reporting Security vulnerabilities in their systems."
             project-title="Acknowledged By Alien Vault"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-alienvault-259l"
           />
           <TheProjectItem
             project-cover-image="Unsplash.png"
             project-caption="Acknowledged by Unsplash for reporting Security vulnerability in the web application."
             project-title="Acknowledged By Unsplash"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-unsplash-40ae"
           />
           <TheProjectItem
             project-cover-image="Magix-HOF.jpg"
             project-caption="Acknowledged by Magix for reporting multiple Security vulnerability in Magix product website."
             project-title="Acknowledged By Magix"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-magix-kg0"
           />
           <TheProjectItem
             project-cover-image="BugCrowd-HOF.png"
             project-caption="Acknowledged by BugCrowd for reporting Security Vulnerability in CrowdControl."
             project-title="Acknowledged By BugCrowd"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-bugcrowd-2d6l"
           />
           <TheProjectItem
             project-cover-image="Hubspot-HOF.jpg"
             project-caption="Acknowledged by Hubspot for reporting Security vulnerability in their website."
             project-title="Acknowledged By Hubspot"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-hubspot-47e9"
           />
           <TheProjectItem
             project-cover-image="Inflectra-HOF.png"
             project-caption="Acknowledged by Inflectra for reporting XSS vulnerability in their website."
             project-title="Acknowledged By Inflectra"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-inflectra-1f3o"
           />
           <TheProjectItem
             project-cover-image="JET-HOF.png"
             project-caption="Acknowledged by Jet for reporting Security Vulnerability in their website."
             project-title="Acknowledged By JET"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-jet-303i"
           />
           <TheProjectItem
             project-cover-image="Intel.png"
             project-caption="Acknowledged by Intel for reporting critical Security Vulnerability in Intel's infrastructure"
             project-title="Acknowledged By Intel"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-intel-3jml"
           />
           <TheProjectItem
             project-cover-image="KNB-HOF.png"
             project-caption="Acknowledged by KNB for reporting Security Vulnerability in their website."
             project-title="Acknowledged By KNB"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-knb-49a8"
           />
           <TheProjectItem
             project-cover-image="LegalRobot-HOF.jpg"
             project-caption="Acknowledged by Legal Robot for reporting Security Vulnerability in their website."
             project-title="Acknowledged By Legal Robot"
-            read-more="https://muhaddis.info"
           />
           <TheProjectItem
             project-cover-image="RecordedFuture-HOF.png"
             project-caption="Acknowledged by Recorded Future for reporting Security Vulnerability in their website."
             project-title="Acknowledged By Recorded Future"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-recorded-future-lkk"
           />
           <TheProjectItem
             project-cover-image="BugCrowd-HOF.png"
             project-caption="Acknowledged by BugCrowd for reporting Security Vulnerability in CrowdControl."
             project-title="Acknowledged By BugCrowd"
-            read-more="https://muhaddis.info"
+            read-more="https://dev.to/muhaddimu/acknowledgement-from-bugcrowd-2d6l"
           />
           <TheProjectItem
             project-cover-image="Europa-HOF.png"
