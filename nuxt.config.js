@@ -122,6 +122,9 @@ export default {
     }
   },
   optimizedImages: {
-    optimizeImages: true
+    optimizeImages: true,
+    responsive: {
+      adapter: require('responsive-loader/sharp')
+    }
   }
 }
