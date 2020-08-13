@@ -555,6 +555,8 @@ embed {
 }
 
 .honors ul {
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
   column-count: 2;
   width: 100%;
   overflow: hidden;
@@ -606,6 +608,10 @@ embed {
   .honors ul {
     column-count: 1;
     column-gap: 0;
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
   }
 }
 

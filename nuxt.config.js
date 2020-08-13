@@ -70,8 +70,7 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/vue-typer', ssr: false },
-    { src: '~/plugins/smooth-scroll', ssr: false },
+    { src: '~/plugins/vue-typer', ssr: false, mode: 'client' },
     { src: '~/plugins/jQuery.client.js', ssr: false },
     { src: '~plugins/mailer-lite.js', mode: 'client' }
   ],

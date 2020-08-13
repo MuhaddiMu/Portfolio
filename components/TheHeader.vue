@@ -31,44 +31,44 @@
         <!-- Screen Size > 880px -->
         <ul class="regular">
           <li class="profile-nav">
-            <a v-smooth-scroll href="#profile">Profile<span></span></a>
+            <a href="#profile">Profile<span></span></a>
           </li>
           <li class="skills-nav">
-            <a v-smooth-scroll href="#skills">Skills<span></span></a>
+            <a href="#skills">Skills<span></span></a>
           </li>
           <li class="honors-nav">
-            <a v-smooth-scroll href="#honors">Honors<span></span></a>
+            <a href="#honors">Honors<span></span></a>
           </li>
           <li class="works-nav">
-            <a v-smooth-scroll href="#works">Works<span></span></a>
+            <a href="#works">Works<span></span></a>
           </li>
           <li class="blog-nav">
-            <a v-smooth-scroll href="#blog">Blog<span></span></a>
+            <a href="#blog">Blog<span></span></a>
           </li>
           <li class="contact-nav">
-            <a v-smooth-scroll href="#contact">Contact<span></span></a>
+            <a href="#contact">Contact<span></span></a>
           </li>
         </ul>
 
         <!-- Screen Size < 880px -->
         <ul class="mobile">
           <li class="profile-nav">
-            <a v-smooth-scroll href="#profile"><span></span></a>
+            <a href="#profile"><span></span></a>
           </li>
           <li class="skills-nav">
-            <a v-smooth-scroll href="#skills"><span></span></a>
+            <a href="#skills"><span></span></a>
           </li>
           <li class="honors-nav">
-            <a v-smooth-scroll href="#honors"><span></span></a>
+            <a href="#honors"><span></span></a>
           </li>
           <li class="works-nav">
-            <a v-smooth-scroll href="#works"><span></span></a>
+            <a href="#works"><span></span></a>
           </li>
           <li class="blog-nav">
-            <a v-smooth-scroll href="#blog"><span></span></a>
+            <a href="#blog"><span></span></a>
           </li>
           <li class="contact-nav">
-            <a v-smooth-scroll href="#contact"><span></span></a>
+            <a href="#contact"><span></span></a>
           </li>
         </ul>
       </nav>

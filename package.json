@@ -26,7 +26,6 @@
     "nuxt": "^2.14.1",
     "prism-themes": "^1.4.0",
     "reading-time": "^1.2.0",
-    "vue-smooth-scroll": "^1.0.13",
     "vue-typer": "^1.2.0"
   },
   "devDependencies": {
@@ -47,7 +46,7 @@
     "lint-staged": "^10.0.0",
     "lqip-loader": "^2.2.0",
     "prettier": "^1.19.1",
-    "responsive-loader": "^2.0.0",
+    "responsive-loader": "^2.0.1",
     "sharp": "^0.25.4",
     "sqip-loader": "^1.0.0",
     "webp-loader": "^0.6.0"
