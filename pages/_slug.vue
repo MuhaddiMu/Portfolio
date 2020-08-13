@@ -1,6 +1,6 @@
 <template>
   <div class="panel box">
-    <div class="in">
+    <div id="blog_post" class="in">
       <h2 class="post_title">{{ blog.Title }}</h2>
       <div class="post_date">
         <h5 class="day">
