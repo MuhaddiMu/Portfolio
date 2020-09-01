@@ -97,6 +97,21 @@ export default {
           hid: 'twitter:description',
           name: 'twitter:description',
           content: this.blog.Description
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: this.blog.dir + '/images/' + this.blog.Featured_Image
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://muhaddis.info' + this.blog.dir
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image'
         }
       ]
     }

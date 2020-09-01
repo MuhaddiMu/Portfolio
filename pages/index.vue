@@ -45,7 +45,29 @@ export default {
   head() {
     return {
       titleTemplate: '',
-      title: 'Muhaddis – Security Engineer'
+      title: 'Muhaddis – Security Engineer',
+      meta: [
+        {
+          hid: 'og:title',
+          property: 'og:title',
+          content: 'Muhaddis – Security Engineer'
+        },
+        {
+          hid: 'og:image',
+          property: 'og:image',
+          content: 'https://muhaddis.info/Meta.jpg'
+        },
+        {
+          hid: 'og:url',
+          property: 'og:url',
+          content: 'https://muhaddis.info'
+        },
+        {
+          hid: 'twitter:card',
+          name: 'twitter:card',
+          content: 'summary_large_image'
+        }
+      ]
     }
   }
 }
