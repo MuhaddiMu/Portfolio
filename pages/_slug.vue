@@ -101,7 +101,20 @@ export default {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: this.blog.dir + '/images/' + this.blog.Featured_Image
+          content:
+            'https://muhaddis.info' +
+            this.blog.dir +
+            '/images/' +
+            this.blog.Featured_Image
+        },
+        {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content:
+            'https://muhaddis.info' +
+            this.blog.dir +
+            '/images/' +
+            this.blog.Featured_Image
         },
         {
           hid: 'og:url',

@@ -58,6 +58,11 @@ export default {
           content: 'https://muhaddis.info/Meta.jpg'
         },
         {
+          hid: 'twitter:image',
+          property: 'twitter:image',
+          content: 'https://muhaddis.info/Meta.jpg'
+        },
+        {
           hid: 'og:url',
           property: 'og:url',
           content: 'https://muhaddis.info'
