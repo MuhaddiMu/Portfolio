@@ -21,7 +21,7 @@
     }
   },
   "dependencies": {
-    "@nuxt/content": "^1.7.1",
+    "@nuxt/content": "^1.8.1",
     "@nuxtjs/pwa": "^3.0.2",
     "nuxt": "^2.14.4",
     "prism-themes": "^1.4.0",
@@ -43,7 +43,7 @@
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-pngquant": "^9.0.0",
     "imagemin-svgo": "^8.0.0",
-    "lint-staged": "^10.2.13",
+    "lint-staged": "^10.3.0",
     "lqip-loader": "^2.2.0",
     "prettier": "^1.19.1",
     "responsive-loader": "^2.0.2",
