@@ -43,7 +43,6 @@
         >
           <input type="hidden" name="_next" value="https://muhaddis.info" />
           <input type="text" name="_honey" style="display:none" />
-          <input type="hidden" name="_captcha" value="false" />
 
           <p>
             <label
