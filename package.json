@@ -23,7 +23,7 @@
   "dependencies": {
     "@nuxt/content": "^1.8.1",
     "@nuxtjs/pwa": "^3.0.2",
-    "nuxt": "^2.14.4",
+    "nuxt": "^2.14.5",
     "prism-themes": "^1.4.0",
     "reading-time": "^1.2.0",
     "vue-typer": "^1.2.0"
@@ -39,14 +39,14 @@
     "eslint-config-prettier": "^6.10.0",
     "eslint-plugin-nuxt": ">=0.4.2",
     "eslint-plugin-prettier": "^3.1.2",
-    "husky": "^4.0.0",
+    "husky": "^4.3.0",
     "imagemin-mozjpeg": "^9.0.0",
-    "imagemin-pngquant": "^9.0.0",
+    "imagemin-pngquant": "^9.0.1",
     "imagemin-svgo": "^8.0.0",
     "lint-staged": "^10.3.0",
-    "lqip-loader": "^2.2.0",
+    "lqip-loader": "^2.2.1",
     "prettier": "^1.19.1",
-    "responsive-loader": "^2.0.2",
+    "responsive-loader": "^2.1.1",
     "sharp": "^0.25.4",
     "sqip-loader": "^1.0.0",
     "webp-loader": "^0.6.0"
