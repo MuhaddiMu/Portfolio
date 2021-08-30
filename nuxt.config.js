@@ -1,5 +1,6 @@
 export default {
-  mode: 'universal',
+  // Target: https://go.nuxtjs.dev/config-target
+  target: 'server',
   /*
    ** Headers of the page
    */
@@ -12,27 +13,27 @@ export default {
         hid: 'description',
         name: 'description',
         content:
-          'Muhaddis is a Security Engineer and Web Developer who likes to play with all kind of technologies and develop scalable and secure applications. He is the Security Engineer at Foretheta.'
+          'Muhaddis is a Security Engineer and Web Developer who likes to play with all kind of technologies and develop scalable and secure applications. He is the Security Engineer at Foretheta.',
       },
       {
         hid: 'og:description',
         property: 'og:description',
         content:
-          'Muhaddis is a Security Engineer and Web Developer who likes to play with all kind of technologies and develop scalable and secure applications. He is the Security Engineer at Foretheta.'
+          'Muhaddis is a Security Engineer and Web Developer who likes to play with all kind of technologies and develop scalable and secure applications. He is the Security Engineer at Foretheta.',
       },
       {
         hid: 'twitter:description',
         name: 'twitter:description',
         content:
-          'Muhaddis is a Security Engineer and Web Developer who likes to play with all kind of technologies and develop scalable and secure applications. He is the Security Engineer at Foretheta.'
-      }
+          'Muhaddis is a Security Engineer and Web Developer who likes to play with all kind of technologies and develop scalable and secure applications. He is the Security Engineer at Foretheta.',
+      },
     ],
     noscript: [
       {
         id: 'sanitize',
         hid: 'sanitize',
-        innerHTML: `<style type="text/css"> body { display: block !important; opacity: 1 !important; } </style>`
-      }
+        innerHTML: `<style type="text/css"> body { display: block !important; opacity: 1 !important; } </style>`,
+      },
     ],
     __dangerouslyDisableSanitizers: ['noscript'],
     link: [
@@ -40,23 +41,22 @@ export default {
       {
         rel: 'stylesheet',
         type: 'text/css',
-        href:
-          'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800'
+        href: 'https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,300,400,600,700,800',
       },
       {
         rel: 'stylesheet',
         type: 'text/css',
-        href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700'
-      }
+        href: 'https://fonts.googleapis.com/css?family=Montserrat:400,700',
+      },
     ],
     script: [
       {
-        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+        src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js',
       },
       {
-        src: 'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js'
-      }
-    ]
+        src: 'https://code.jquery.com/ui/1.12.0/jquery-ui.min.js',
+      },
+    ],
   },
   /*
    ** Customize the progress-bar color
@@ -72,7 +72,7 @@ export default {
   plugins: [
     { src: '~/plugins/vue-typer', ssr: false, mode: 'client' },
     { src: '~/plugins/jQuery.client.js', ssr: false },
-    { src: '~plugins/mailer-lite.js', mode: 'client' }
+    { src: '~plugins/mailer-lite.js', mode: 'client' },
   ],
   /*
    ** Nuxt.js dev-modules
@@ -83,10 +83,10 @@ export default {
     [
       '@nuxtjs/google-analytics',
       {
-        id: 'UA-93991901-2'
-      }
+        id: 'UA-93991901-2',
+      },
     ],
-    '@aceforth/nuxt-optimized-images'
+    '@aceforth/nuxt-optimized-images',
   ],
   /*
    ** Nuxt.js modules
@@ -99,18 +99,19 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    extend(config, ctx) {}
+    extend(config, ctx) {},
   },
   server: {
-    host: '0.0.0.0'
+    host: '0.0.0.0',
   },
   content: {
     markdown: {
       prism: {
-        theme: 'prism-themes/themes/prism-synthwave84.css'
-      }
-    }
+        theme: 'prism-themes/themes/prism-synthwave84.css',
+      },
+    },
   },
+
   components: true,
   hooks: {
     'content:file:beforeInsert': (document) => {
@@ -119,12 +120,12 @@ export default {
 
         document.readingTime = time
       }
-    }
+    },
   },
   optimizedImages: {
     optimizeImages: true,
     responsive: {
-      adapter: require('responsive-loader/sharp')
-    }
-  }
+      adapter: require('responsive-loader/sharp'),
+    },
+  },
 }

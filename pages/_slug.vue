@@ -24,10 +24,10 @@
         class="url_hover"
         :href="
           'https://twitter.com/intent/tweet?text=' +
-            blog.Title +
-            '%20by%20@MuhaddiMu%20%F0%9F%91%87%20%0Ahttps://www.muhaddis.info' +
-            blog.dir +
-            '&amp;related=MuhaddiMu'
+          blog.Title +
+          '%20by%20@MuhaddiMu%20%F0%9F%91%87%20%0Ahttps://www.muhaddis.info' +
+          blog.dir +
+          '&amp;related=MuhaddiMu'
         "
         target="_blank"
         >Twitter</a
@@ -36,8 +36,8 @@
         class="url_hover"
         :href="
           'https://github.com/MuhaddiMu/Portfolio/tree/master/content' +
-            blog.path +
-            '.md'
+          blog.path +
+          '.md'
         "
         target="_blank"
         >it on GitHub</a
@@ -59,14 +59,8 @@ export default {
     } catch (err) {
       error({
         statusCode: 404,
-        message: 'Page could not be found'
+        message: 'Page could not be found',
       })
-    }
-  },
-  methods: {
-    formatDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' }
-      return new Date(date).toLocaleDateString('en', options)
     }
   },
   head() {
@@ -76,27 +70,27 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: this.blog.Description
+          content: this.blog.Description,
         },
         {
           hid: 'og:title',
           property: 'og:title',
-          content: this.blog.Title
+          content: this.blog.Title,
         },
         {
           hid: 'og:description',
           property: 'og:description',
-          content: this.blog.Description
+          content: this.blog.Description,
         },
         {
           hid: 'twitter:title',
           name: 'twitter:title',
-          content: this.blog.Title
+          content: this.blog.Title,
         },
         {
           hid: 'twitter:description',
           name: 'twitter:description',
-          content: this.blog.Description
+          content: this.blog.Description,
         },
         {
           hid: 'og:image',
@@ -105,7 +99,7 @@ export default {
             'https://muhaddis.info' +
             this.blog.dir +
             '/images/' +
-            this.blog.Featured_Image
+            this.blog.Featured_Image,
         },
         {
           hid: 'twitter:image',
@@ -114,21 +108,27 @@ export default {
             'https://muhaddis.info' +
             this.blog.dir +
             '/images/' +
-            this.blog.Featured_Image
+            this.blog.Featured_Image,
         },
         {
           hid: 'og:url',
           property: 'og:url',
-          content: 'https://muhaddis.info' + this.blog.dir
+          content: 'https://muhaddis.info' + this.blog.dir,
         },
         {
           hid: 'twitter:card',
           name: 'twitter:card',
-          content: 'summary_large_image'
-        }
-      ]
+          content: 'summary_large_image',
+        },
+      ],
     }
-  }
+  },
+  methods: {
+    formatDate(date) {
+      const options = { year: 'numeric', month: 'long', day: 'numeric' }
+      return new Date(date).toLocaleDateString('en', options)
+    },
+  },
 }
 </script>
 

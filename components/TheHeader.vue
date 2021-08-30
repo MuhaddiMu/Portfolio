@@ -21,9 +21,7 @@
           </h4>
         </client-only>
         <noscript inline-template>
-          <h4 class="sub">
-            Security Researcher
-          </h4>
+          <h4 class="sub">Security Researcher</h4>
         </noscript>
       </div>
 
