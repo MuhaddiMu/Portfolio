@@ -47,7 +47,7 @@
     "lqip-loader": "^2.2.1",
     "prettier": "^2.3.2",
     "responsive-loader": "^2.3.0",
-    "sharp": "^0.25.4",
+    "sharp": "^0.30.5",
     "sqip-loader": "^1.0.0",
     "webp-loader": "^0.6.0"
   }
