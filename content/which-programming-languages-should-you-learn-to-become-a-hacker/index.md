@@ -12,7 +12,7 @@ There are lots of computer languages but few are required for hacking purpose be
 Programming languages for Web Hacking and Pentesting
 If you’re interested in web hacking and pentesting, then you must learn learn below mentioned languages at-least basic and intermediate level.
 
-- **HTML**: Always began with basic basic and HTML is important and most basic markup language. One should know it very well to understand web action, response, structure and logic. HTML is static markup language.
+- **HTML**: Always begin with basic and HTML is important and most basic markup language. One should know it very well to understand web action, response, structure and logic. HTML is static markup language.
 - **JavaScript**: JavaScript : JavaScript is the most used as client-side programming. You should learn it on high priority mode. Understanding JavaScript code logic can help you find web-apps flaw.
 - **SQL**: SQL is database programming language. Each and every data is stored in database so you should know about database programming and vulnerability as it is the most sensitive part of Web.
 - **PHP**: PHP is most popular dynamic programming language, unlike JavaScript It is server-side programming language. PHP is strongly recommended to every beginner in Hacking and Penetration testing.
